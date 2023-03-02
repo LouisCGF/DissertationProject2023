@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpItemView: View {
+struct SocialIconView: View {
     
     let image: String
     
@@ -17,8 +17,8 @@ struct SignUpItemView: View {
             Image(image)
                 .resizable()
                 .scaledToFit()
-                .frame(height: 40, alignment: .center)
-                .cornerRadius(10)
+                .frame(width: 50, height: 50, alignment: .center)
+                
             
         }
         .frame(width: 85, height: 60, alignment: .center)
@@ -28,7 +28,7 @@ struct SignUpItemView: View {
 
 struct SignUpItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpItemView(image: "btn_google_light_normal_ios")
+        SocialIconView(image: "btn_google_light_normal_ios")
             .previewLayout(.sizeThatFits)
             .padding()
     }

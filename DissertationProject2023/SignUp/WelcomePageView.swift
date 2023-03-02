@@ -8,72 +8,59 @@
 import SwiftUI
 
 struct WelcomePageView: View {
+    
+    
+    @State var index = 0
+    
     var body: some View {
         ZStack {
             
-            // Gradient Background
             Color.white
             
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .foregroundStyle( .linearGradient(colors: [.black, .white], startPoint: .topLeading, endPoint: .bottomTrailing) )
-                .frame(width: 1000, height: 400)
-                .rotationEffect(.degrees(135))
-                .offset(y: -350)
-            
-            // Welcome Text
-            
-            VStack (alignment: .leading) {
+                .foregroundStyle(.linearGradient(colors: [.white, .black], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .rotationEffect(.degrees(-180))
+                .offset(x: -0, y: -350)
+
+            VStack{
                 
-                Image(systemName: "circle.dashed")
-                    .font(.system(size: 38))
-                    .foregroundColor(.green)
+                // Welcome Text
+                VStack (alignment: .leading) {
+                    
+                    Image(systemName: "circle.dashed")
+                        .font(.system(size: 38))
+                        .foregroundColor(.green)
+                    
+                    (Text("Welcome,")
+                        .font(.title)
+                        .foregroundColor(.black) +
+                     Text("\nLogin or Sign Up")
+                        .font(.title)
+                        .foregroundColor(Color(hue: 1.0, saturation: 0.01, brightness: 0.822)))
+                    .fontWeight(.semibold)
+                    .lineSpacing(10)
+                    .padding(.top, 20)
+                    .padding(.trailing, 90)
+                    
+                    
+                }
+                .padding(.bottom, 60)
                 
-                (Text("Welcome,")
-                    .font(.title)
-                    .foregroundColor(.black) +
-                 Text("\nGet Started or Sign In")
-                    .font(.title)
-                    .foregroundColor(Color(hue: 1.0, saturation: 0.01, brightness: 0.822)))
-                .fontWeight(.semibold)
-                .lineSpacing(10)
-                .padding(.top, 20)
-                .padding(.trailing, 65)
                 
-                Spacer()
                 
-               
+                LoginAndSignupView()
+                
+                
                 
             }
-            .padding()
             
-            VStack {
-                
-                Spacer()
-                
-                //SignUpItemsGroupView()
-                
-                // Get Started button
-                Button{
-                    
-                } label: {
-                    PrimaryButton(title: "Get Started", textColor: .white, backgroundColor: .gray)
-                }
-                
-                
-                // Sign In button
-                Button {
-                    
-                } label: {
-                    PrimaryButton(title: "Sign In", textColor: .black, backgroundColor: .white)
-                        .padding(.vertical)
-                }
-                
-            }
-            .padding()
-            
-            
+        
             
         }
+        .padding(.top, 60)
+        .ignoresSafeArea()
+        
+
     }
 }
 
@@ -82,6 +69,9 @@ struct LoginPage_Previews: PreviewProvider {
         WelcomePageView()
     }
 }
+
+
+
 
 struct PrimaryButton: View {
     

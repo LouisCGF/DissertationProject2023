@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BF63D1D429B10B00004EDB65 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D329B10B00004EDB65 /* WelcomePageView.swift */; };
-		BF63D1D729B10CE4004EDB65 /* SignUpItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D629B10CE4004EDB65 /* SignUpItemView.swift */; };
-		BF63D1D929B10E15004EDB65 /* SignUpItemsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D829B10E15004EDB65 /* SignUpItemsGroupView.swift */; };
+		BF63D1D729B10CE4004EDB65 /* SocialIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D629B10CE4004EDB65 /* SocialIconView.swift */; };
+		BF63D1D929B10E15004EDB65 /* SocialIconsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D829B10E15004EDB65 /* SocialIconsGroupView.swift */; };
+		BF63D1DB29B12517004EDB65 /* LoginAndSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1DA29B12517004EDB65 /* LoginAndSignupView.swift */; };
 		BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */; };
 		BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A429AFF9E900D47803 /* ContentView.swift */; };
 		BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */; };
@@ -18,8 +19,9 @@
 
 /* Begin PBXFileReference section */
 		BF63D1D329B10B00004EDB65 /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
-		BF63D1D629B10CE4004EDB65 /* SignUpItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpItemView.swift; sourceTree = "<group>"; };
-		BF63D1D829B10E15004EDB65 /* SignUpItemsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpItemsGroupView.swift; sourceTree = "<group>"; };
+		BF63D1D629B10CE4004EDB65 /* SocialIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialIconView.swift; sourceTree = "<group>"; };
+		BF63D1D829B10E15004EDB65 /* SocialIconsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialIconsGroupView.swift; sourceTree = "<group>"; };
+		BF63D1DA29B12517004EDB65 /* LoginAndSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignupView.swift; sourceTree = "<group>"; };
 		BFE0A59F29AFF9E900D47803 /* DissertationProject2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DissertationProject2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationProject2023App.swift; sourceTree = "<group>"; };
 		BFE0A5A429AFF9E900D47803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,8 +44,9 @@
 			isa = PBXGroup;
 			children = (
 				BF63D1D329B10B00004EDB65 /* WelcomePageView.swift */,
-				BF63D1D629B10CE4004EDB65 /* SignUpItemView.swift */,
-				BF63D1D829B10E15004EDB65 /* SignUpItemsGroupView.swift */,
+				BF63D1D629B10CE4004EDB65 /* SocialIconView.swift */,
+				BF63D1D829B10E15004EDB65 /* SocialIconsGroupView.swift */,
+				BF63D1DA29B12517004EDB65 /* LoginAndSignupView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -155,10 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */,
+				BF63D1DB29B12517004EDB65 /* LoginAndSignupView.swift in Sources */,
 				BF63D1D429B10B00004EDB65 /* WelcomePageView.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
-				BF63D1D929B10E15004EDB65 /* SignUpItemsGroupView.swift in Sources */,
-				BF63D1D729B10CE4004EDB65 /* SignUpItemView.swift in Sources */,
+				BF63D1D929B10E15004EDB65 /* SocialIconsGroupView.swift in Sources */,
+				BF63D1D729B10CE4004EDB65 /* SocialIconView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
