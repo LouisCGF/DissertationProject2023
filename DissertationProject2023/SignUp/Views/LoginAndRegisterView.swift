@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginAndSignupView: View {
+struct LoginAndRegisterView: View {
     
     @State var index = 0
     @State var viewPassword = false
@@ -21,7 +21,7 @@ struct LoginAndSignupView: View {
                 
                 ZStack {
                     
-                    SignUp(index: self.$index, viewPassword: self.$viewPassword, viewConfPassword: self.$viewConfPassword)
+                    Register(index: self.$index, viewPassword: self.$viewPassword, viewConfPassword: self.$viewConfPassword)
                         // Changing view order
                         .zIndex(Double(self.index))
                     
@@ -58,7 +58,9 @@ struct LoginAndSignupView: View {
 
 struct GetStartedView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginAndSignupView()
+        NavigationView {
+            LoginAndRegisterView()
+        }
     }
 }
 
@@ -100,10 +102,11 @@ struct CShape1 : Shape {
     
 }
 
-struct Login : View {
+struct Login: View {
     
     @State var email = ""
     @State var pass = ""
+    @State private var showForgotPassword = false
     @Binding var index : Int
     @Binding var viewPassword: Bool
     
@@ -121,7 +124,7 @@ struct Login : View {
                             .fontWeight(.bold)
                         
                         Capsule()
-                            .fill( self.index == 0 ? .blue : .clear )
+                            .fill( self.index == 0 ? .green : .clear )
                             .frame(width: 100, height: 5)
                     }
                     
@@ -131,52 +134,31 @@ struct Login : View {
                 .padding(.top, 30)
                 
                 // Email Field
-                VStack {
-                    
-                    HStack (spacing: 15) {
-                        Image(systemName: "envelope.fill")
-                            .foregroundColor(.white)
-                        
-                        TextField("Email Address", text: self.$email)
-                            .foregroundColor(.white)
-                            
-                        
-                    }
-                    
-                    Divider().background(Color.white.opacity(0.5))
-                    
-                }
+                InputTextFieldView(text: .constant(""),
+                                   placeholder: "Email",
+                                   keyboardType: .emailAddress,
+                                   sfSymbol: "envelope",
+                                   sfSymbolColor: .white)
                 .padding(.horizontal)
-                .padding(.top, 40)
+                .padding(.top, 10)
                 
                 
                 // Password Field
-                VStack {
-                    
-                    HStack (spacing: 15) {
-                        Image(systemName: self.viewPassword ? "eye.fill" : "eye.slash.fill")
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                self.viewPassword.toggle()
-                            }
-                        
-                        Group {
-                            if !self.viewPassword {
-                                SecureField("Password", text: self.$pass)
-                                    .foregroundColor(.white)
-                            } else {
-                                TextField("Password", text: self.$pass)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                     
-                    }
-                    
-                    Divider().background(Color.white.opacity(0.5))
-                    
-                }
+                InputPasswordView(password: .constant(""),
+                                  placeholder: "Password",
+                                  sfSymbol: "eye.slash")
                 .padding(.horizontal)
-                .padding(.top, 30)
+                .padding(.top, 10)
+                
+                // This is to match the height of the signup view - probably a dumb way of doing it but whatever
+                InputTextFieldView(text: .constant(""),
+                                   placeholder: "",
+                                   keyboardType: .emailAddress,
+                                   sfSymbol: "",
+                                   sfSymbolColor: .clear)
+                .padding(.horizontal)
+                .padding(.top, 10)
+                .opacity(0)
                 
                 
                 // Forgot Password
@@ -185,11 +167,15 @@ struct Login : View {
                     Spacer(minLength: 0)
                     
                     Button {
-                        
+                        showForgotPassword.toggle()
                     } label: {
                         Text("Forgot Password?")
                             .foregroundColor(Color.white.opacity(0.6))
                     }
+                    .sheet(isPresented: $showForgotPassword,
+                           content: {
+                        ForgotPasswordView()
+                    })
                     
                 }
                 .padding(.horizontal)
@@ -211,18 +197,11 @@ struct Login : View {
             .padding(.horizontal, 20)
             
             // Login Button
-            Button {
+            ButtonView(title: "Login",
+                       background: .gray){
                 
-            } label: {
-                Text("Login")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                    .padding(.vertical)
-                    .padding(.horizontal, 50)
-                    .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.19))
-                    .clipShape(Capsule())
-                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
             }
+            .padding()
             .offset(y: 25)
             .opacity( self.index == 0 ? 1 : 0 )
         }
@@ -231,7 +210,7 @@ struct Login : View {
     
 }
 
-struct SignUp : View {
+struct Register : View {
     
     @State var email = ""
     @State var pass = ""
@@ -250,13 +229,13 @@ struct SignUp : View {
                     Spacer(minLength: 0)
                     
                     VStack (spacing: 10) {
-                        Text("Sign Up")
+                        Text("Register")
                             .foregroundColor( self.index == 1 ? .white : .gray )
                             .font(.title)
                         .fontWeight(.bold)
                         
                         Capsule()
-                            .fill( self.index == 1 ? .blue : .clear )
+                            .fill( self.index == 1 ? .green : .clear )
                             .frame(width: 100, height: 5)
                         
                     }
@@ -264,81 +243,38 @@ struct SignUp : View {
                 }
                 .padding(.top, 30)
                 
-                // Email Field
-                VStack {
-                    
-                    HStack (spacing: 15) {
-                        Image(systemName: "envelope.fill")
-                            .foregroundColor(.white)
-                        
-                        TextField("Email Address", text: self.$email)
-                            .foregroundColor(.white)
-                            
-                        
-                    }
-                    
-                    Divider().background(Color.white.opacity(0.5))
-                    
-                }
+                // Username Field
+                InputTextFieldView(text: .constant(""),
+                                   placeholder: "Username",
+                                   keyboardType: .namePhonePad,
+                                   sfSymbol: "person.crop.circle",
+                                   sfSymbolColor: .white)
                 .padding(.horizontal)
-                .padding(.top, 40)
+                .padding(.top, 10)
+                
+                // Email Field
+                InputTextFieldView(text: .constant(""),
+                                   placeholder: "Email",
+                                   keyboardType: .emailAddress,
+                                   sfSymbol: "envelope",
+                                   sfSymbolColor: .white)
+                .padding(.horizontal)
+                .padding(.top, 10)
                 
                 
                 // Password Field
-                VStack {
-                    
-                    HStack (spacing: 15) {
-                        Image(systemName: self.viewPassword ? "eye.fill" : "eye.slash.fill")
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                self.viewPassword.toggle()
-                            }
-                        
-                        Group {
-                            if !self.viewPassword {
-                                SecureField("Password", text: self.$pass)
-                                    .foregroundColor(.white)
-                            } else {
-                                TextField("Password", text: self.$pass)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                            
-                        
-                    }
-                    
-                    Divider().background(Color.white.opacity(0.5))
-                    
-                }
+                InputPasswordView(password: .constant(""),
+                                  placeholder: "Password",
+                                  sfSymbol: "eye.slash")
                 .padding(.horizontal)
-                .padding(.top, 30)
+                .padding(.top, 10)
                 
                 // Confirm Password Field
-                VStack {
-                    
-                    HStack (spacing: 15) {
-                        Image(systemName: self.viewConfPassword ? "eye.fill" : "eye.slash.fill")
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                self.viewConfPassword.toggle()
-                            }
-                        
-                        Group {
-                            if !self.viewConfPassword {
-                                SecureField("Confirm Password", text: self.$confPass)
-                                    .foregroundColor(.white)
-                            } else {
-                                TextField("Confirm Password", text: self.$confPass)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                    }
-                    
-                    Divider().background(Color.white.opacity(0.5))
-                    
-                }
+                InputPasswordView(password: .constant(""),
+                                  placeholder: "Confirm Password",
+                                  sfSymbol: "eye.slash")
                 .padding(.horizontal)
-                .padding(.top, 30)
+                .padding(.top, 10)
                 
 
                 
@@ -357,19 +293,12 @@ struct SignUp : View {
             .cornerRadius(35)
             .padding(.horizontal, 20)
             
-            // Login Button
-            Button {
+            // Sign up Button
+            ButtonView(title: "Sign Up",
+                       background: .gray){
                 
-            } label: {
-                Text("Sign Up")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                    .padding(.vertical)
-                    .padding(.horizontal, 50)
-                    .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.19))
-                    .clipShape(Capsule())
-                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
             }
+            .padding()
             .offset(y: 25)
             .opacity( self.index == 1 ? 1 : 0 )
         }

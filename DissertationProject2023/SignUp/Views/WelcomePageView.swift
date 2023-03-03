@@ -34,7 +34,7 @@ struct WelcomePageView: View {
                     (Text("Welcome,")
                         .font(.title)
                         .foregroundColor(.black) +
-                     Text("\nLogin or Sign Up")
+                     Text("\nLogin or Register")
                         .font(.title)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.01, brightness: 0.822)))
                     .fontWeight(.semibold)
@@ -44,11 +44,11 @@ struct WelcomePageView: View {
                     
                     
                 }
-                .padding(.bottom, 60)
+                .padding(.bottom, 15)
                 
                 
                 
-                LoginAndSignupView()
+                LoginAndRegisterView()
                 
                 
                 
@@ -73,21 +73,4 @@ struct LoginPage_Previews: PreviewProvider {
 
 
 
-struct PrimaryButton: View {
-    
-    var title: String
-    var textColor: Color
-    var backgroundColor: Color
-    
-    var body: some View {
-        Text(title)
-            .font(.title3)
-            .fontWeight(.bold)
-            .foregroundColor(textColor)
-            .frame(maxWidth: 300)
-            .padding()
-            .background(backgroundColor)
-            .cornerRadius(50)
-            .shadow(color: Color.black.opacity(0.8), radius: 60, x: 0.0, y: 0.0)
-    }
-}
+
