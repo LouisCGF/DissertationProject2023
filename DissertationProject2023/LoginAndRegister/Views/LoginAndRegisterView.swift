@@ -104,8 +104,10 @@ struct CShape1 : Shape {
 
 struct Login: View {
     
-    @State var email = ""
-    @State var pass = ""
+    @StateObject private var vm = LoginViewModelImpl(
+        service: LoginServiceImpl()
+    )
+    
     @State private var showForgotPassword = false
     @Binding var index : Int
     @Binding var viewPassword: Bool
@@ -134,7 +136,7 @@ struct Login: View {
                 .padding(.top, 30)
                 
                 // Email Field
-                InputTextFieldView(text: .constant(""),
+                InputTextFieldView(text: $vm.credentials.email,
                                    placeholder: "Email",
                                    keyboardType: .emailAddress,
                                    sfSymbol: "envelope",
@@ -144,7 +146,7 @@ struct Login: View {
                 
                 
                 // Password Field
-                InputPasswordView(password: .constant(""),
+                InputPasswordView(password: $vm.credentials.password,
                                   placeholder: "Password",
                                   sfSymbol: "eye.slash")
                 .padding(.horizontal)
@@ -199,7 +201,7 @@ struct Login: View {
             // Login Button
             ButtonView(title: "Login",
                        background: .gray){
-                
+                vm.login()
             }
             .padding()
             .offset(y: 25)
