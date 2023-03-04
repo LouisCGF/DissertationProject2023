@@ -212,9 +212,11 @@ struct Login: View {
 
 struct Register : View {
     
-    @State var email = ""
-    @State var pass = ""
-    @State var confPass = ""
+    @StateObject private var vm = RegistrationViewModelImpl(
+        service: RegistrationServiceImpl()
+    )
+    
+
     @Binding var index : Int
     @Binding var viewPassword: Bool
     @Binding var viewConfPassword: Bool
@@ -244,7 +246,7 @@ struct Register : View {
                 .padding(.top, 30)
                 
                 // Username Field
-                InputTextFieldView(text: .constant(""),
+                InputTextFieldView(text: $vm.userDetails.userName,
                                    placeholder: "Username",
                                    keyboardType: .namePhonePad,
                                    sfSymbol: "person.crop.circle",
@@ -253,7 +255,7 @@ struct Register : View {
                 .padding(.top, 10)
                 
                 // Email Field
-                InputTextFieldView(text: .constant(""),
+                InputTextFieldView(text: $vm.userDetails.email,
                                    placeholder: "Email",
                                    keyboardType: .emailAddress,
                                    sfSymbol: "envelope",
@@ -263,7 +265,7 @@ struct Register : View {
                 
                 
                 // Password Field
-                InputPasswordView(password: .constant(""),
+                InputPasswordView(password: $vm.userDetails.password,
                                   placeholder: "Password",
                                   sfSymbol: "eye.slash")
                 .padding(.horizontal)
@@ -296,7 +298,7 @@ struct Register : View {
             // Sign up Button
             ButtonView(title: "Sign Up",
                        background: .gray){
-                
+                vm.register()
             }
             .padding()
             .offset(y: 25)

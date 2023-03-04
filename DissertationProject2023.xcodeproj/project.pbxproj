@@ -11,6 +11,10 @@
 		BF63D1D729B10CE4004EDB65 /* SocialIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D629B10CE4004EDB65 /* SocialIconView.swift */; };
 		BF63D1D929B10E15004EDB65 /* SocialIconsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1D829B10E15004EDB65 /* SocialIconsGroupView.swift */; };
 		BF63D1DB29B12517004EDB65 /* LoginAndRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63D1DA29B12517004EDB65 /* LoginAndRegisterView.swift */; };
+		BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8329B3BB4C00F6CA26 /* RegistrationViewModel.swift */; };
+		BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8729B3C26700F6CA26 /* SessionUserDetails.swift */; };
+		BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8A29B3C2E000F6CA26 /* SessionService.swift */; };
+		BF816F8F29B3DA2F00F6CA26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF816F8E29B3DA2F00F6CA26 /* GoogleService-Info.plist */; };
 		BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */; };
 		BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */; };
 		BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */; };
@@ -24,7 +28,6 @@
 		BFB6A21029B2910700FF84F5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A20F29B2910700FF84F5 /* FirebaseDatabase */; };
 		BFB6A21229B2910700FF84F5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A21129B2910700FF84F5 /* FirebaseFirestore */; };
 		BFB6A21429B2910700FF84F5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A21329B2910700FF84F5 /* FirebaseStorage */; };
-		BFB6A21629B2920000FF84F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB6A21529B291FF00FF84F5 /* GoogleService-Info.plist */; };
 		BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */; };
 		BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A429AFF9E900D47803 /* ContentView.swift */; };
 		BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */; };
@@ -36,6 +39,10 @@
 		BF63D1D629B10CE4004EDB65 /* SocialIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialIconView.swift; sourceTree = "<group>"; };
 		BF63D1D829B10E15004EDB65 /* SocialIconsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialIconsGroupView.swift; sourceTree = "<group>"; };
 		BF63D1DA29B12517004EDB65 /* LoginAndRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegisterView.swift; sourceTree = "<group>"; };
+		BF816F8329B3BB4C00F6CA26 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		BF816F8729B3C26700F6CA26 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
+		BF816F8A29B3C2E000F6CA26 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		BF816F8E29B3DA2F00F6CA26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
@@ -45,7 +52,6 @@
 		BFB6A20429B286F500FF84F5 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		BFB6A20729B28EA700FF84F5 /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
 		BFB6A20A29B28F1400FF84F5 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
-		BFB6A21529B291FF00FF84F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFE0A59F29AFF9E900D47803 /* DissertationProject2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DissertationProject2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationProject2023App.swift; sourceTree = "<group>"; };
 		BFE0A5A429AFF9E900D47803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,11 +77,45 @@
 		BF63D1D529B10C73004EDB65 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				BF816F8229B3BB2300F6CA26 /* ViewModel */,
 				BFB6A20929B28F0100FF84F5 /* Service */,
 				BFB6A20629B28E6300FF84F5 /* RegisterModel */,
 				BFB6A1FD29B27CF800FF84F5 /* Views */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BF816F8229B3BB2300F6CA26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF816F8329B3BB4C00F6CA26 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF816F8529B3C20B00F6CA26 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				BF816F8929B3C2CB00F6CA26 /* Service */,
+				BF816F8629B3C24200F6CA26 /* Model */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		BF816F8629B3C24200F6CA26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF816F8729B3C26700F6CA26 /* SessionUserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF816F8929B3C2CB00F6CA26 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF816F8A29B3C2E000F6CA26 /* SessionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BFB6A1F229B2735F00FF84F5 /* Base */ = {
@@ -172,10 +212,11 @@
 				BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */,
 				BFB6A1F229B2735F00FF84F5 /* Base */,
 				BF63D1D529B10C73004EDB65 /* SignUp */,
+				BF816F8529B3C20B00F6CA26 /* Session */,
 				BFB6A20029B2855A00FF84F5 /* Home */,
 				BFE0A5A429AFF9E900D47803 /* ContentView.swift */,
 				BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */,
-				BFB6A21529B291FF00FF84F5 /* GoogleService-Info.plist */,
+				BF816F8E29B3DA2F00F6CA26 /* GoogleService-Info.plist */,
 				BFE0A5A829AFF9EA00D47803 /* Preview Content */,
 			);
 			path = DissertationProject2023;
@@ -257,8 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */,
+				BF816F8F29B3DA2F00F6CA26 /* GoogleService-Info.plist in Resources */,
 				BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */,
-				BFB6A21629B2920000FF84F5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +316,16 @@
 				BF63D1DB29B12517004EDB65 /* LoginAndRegisterView.swift in Sources */,
 				BF63D1D429B10B00004EDB65 /* WelcomePageView.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
+				BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */,
 				BFB6A20829B28EA700FF84F5 /* RegistrationDetails.swift in Sources */,
 				BFB6A1FF29B2812F00FF84F5 /* CloseModifier.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
+				BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
 				BFB6A20529B286F500FF84F5 /* ForgotPasswordView.swift in Sources */,
 				BF63D1D929B10E15004EDB65 /* SocialIconsGroupView.swift in Sources */,
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
+				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,
 				BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */,
 				BF63D1D729B10CE4004EDB65 /* SocialIconView.swift in Sources */,
 			);
