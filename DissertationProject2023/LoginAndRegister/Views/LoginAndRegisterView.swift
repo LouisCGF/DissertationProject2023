@@ -147,6 +147,7 @@ struct Login: View {
                 
                 // Password Field
                 InputPasswordView(password: $vm.credentials.password,
+                                  viewPassword: viewPassword,
                                   placeholder: "Password",
                                   sfSymbol: "eye.slash")
                 .padding(.horizontal)
@@ -207,6 +208,20 @@ struct Login: View {
             .offset(y: 25)
             .opacity( self.index == 0 ? 1 : 0 )
         }
+        .alert(isPresented: $vm.hasError,
+               content: {
+            
+            if case .failed(let error) = vm.state {
+                return Alert(
+                    title: Text("Error"),
+                    message: Text(error.localizedDescription))
+            } else {
+                return Alert(
+                    title: Text("Error"),
+                    message: Text("Something went wrong"))
+            }
+            
+        })
         
     }
     
@@ -268,6 +283,7 @@ struct Register : View {
                 
                 // Password Field
                 InputPasswordView(password: $vm.userDetails.password,
+                                  viewPassword: viewPassword,
                                   placeholder: "Password",
                                   sfSymbol: "eye.slash")
                 .padding(.horizontal)
@@ -275,6 +291,7 @@ struct Register : View {
                 
                 // Confirm Password Field
                 InputPasswordView(password: .constant(""),
+                                  viewPassword: viewConfPassword,
                                   placeholder: "Confirm Password",
                                   sfSymbol: "eye.slash")
                 .padding(.horizontal)
@@ -306,6 +323,20 @@ struct Register : View {
             .offset(y: 25)
             .opacity( self.index == 1 ? 1 : 0 )
         }
+        .alert(isPresented: $vm.hasError,
+               content: {
+            
+            if case .failed(let error) = vm.state {
+                return Alert(
+                    title: Text("Error"),
+                    message: Text(error.localizedDescription))
+            } else {
+                return Alert(
+                    title: Text("Error"),
+                    message: Text("Something went wrong"))
+            }
+            
+        })
         
     }
     
