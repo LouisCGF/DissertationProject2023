@@ -322,6 +322,7 @@ struct Register : View {
             .padding()
             .offset(y: 25)
             .opacity( self.index == 1 ? 1 : 0 )
+            
         }
         .alert(isPresented: $vm.hasError,
                content: {
