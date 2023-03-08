@@ -87,21 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF63D1D529B10C73004EDB65 /* LoginAndRegister */ = {
+		BF63D1D529B10C73004EDB65 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				BF906A1D29B683B100B0E709 /* GoogleSignInViewModel */,
 				BF816F9C29B3ECF200F6CA26 /* ForgotPasswordViewModel */,
 				BF816F9929B3E78600F6CA26 /* ForgotPasswordService */,
-				BF816F9629B3E39D00F6CA26 /* LoginViewModel */,
-				BF816F9329B3E18800F6CA26 /* LoginService */,
-				BF816F9029B3E12900F6CA26 /* LoginModel */,
-				BF816F8229B3BB2300F6CA26 /* RegistrationViewModel */,
-				BFB6A20929B28F0100FF84F5 /* RegistrationService */,
-				BFB6A20629B28E6300FF84F5 /* RegisterModel */,
-				BFB6A1FD29B27CF800FF84F5 /* Views */,
+				BFB6A1FD29B27CF800FF84F5 /* View */,
 			);
-			path = LoginAndRegister;
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		BF816F8229B3BB2300F6CA26 /* RegistrationViewModel */ = {
@@ -185,6 +178,44 @@
 			path = GoogleSignInViewModel;
 			sourceTree = "<group>";
 		};
+		BF98302729B936260028D6D1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BF98302829B936510028D6D1 /* View */,
+				BF816F9029B3E12900F6CA26 /* LoginModel */,
+				BF816F9329B3E18800F6CA26 /* LoginService */,
+				BF816F9629B3E39D00F6CA26 /* LoginViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BF98302829B936510028D6D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF98302329B8FF6C0028D6D1 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF98302929B9366F0028D6D1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				BF98302A29B9368D0028D6D1 /* View */,
+				BF816F8229B3BB2300F6CA26 /* RegistrationViewModel */,
+				BFB6A20929B28F0100FF84F5 /* RegistrationService */,
+				BFB6A20629B28E6300FF84F5 /* RegisterModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		BF98302A29B9368D0028D6D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF98302529B918C20028D6D1 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BFB6A1F229B2735F00FF84F5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,14 +244,12 @@
 			path = Modifier;
 			sourceTree = "<group>";
 		};
-		BFB6A1FD29B27CF800FF84F5 /* Views */ = {
+		BFB6A1FD29B27CF800FF84F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BFB6A20429B286F500FF84F5 /* ForgotPasswordView.swift */,
-				BF98302329B8FF6C0028D6D1 /* LoginView.swift */,
-				BF98302529B918C20028D6D1 /* RegisterView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		BFB6A20029B2855A00FF84F5 /* Home */ = {
@@ -277,7 +306,10 @@
 				BF906A1A29B660A900B0E709 /* Info.plist */,
 				BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */,
 				BFB6A1F229B2735F00FF84F5 /* Base */,
-				BF63D1D529B10C73004EDB65 /* LoginAndRegister */,
+				BF98302929B9366F0028D6D1 /* Register */,
+				BF98302729B936260028D6D1 /* Login */,
+				BF906A1D29B683B100B0E709 /* GoogleSignInViewModel */,
+				BF63D1D529B10C73004EDB65 /* ForgotPassword */,
 				BF816F8529B3C20B00F6CA26 /* Session */,
 				BFB6A20029B2855A00FF84F5 /* Home */,
 				BFE0A5A429AFF9E900D47803 /* ContentView.swift */,

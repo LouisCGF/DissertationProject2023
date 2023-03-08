@@ -115,6 +115,7 @@ struct LoginView: View {
                     }
                     .foregroundColor(.white)
                     .font(.footnote)
+                    .padding()
                     
                     ButtonView(title: "Sign In"){
                         vm.login()
