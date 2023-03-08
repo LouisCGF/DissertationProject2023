@@ -10,6 +10,7 @@ import SwiftUI
 struct CloseModifier: ViewModifier {
     
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     
     func body(content: Content) -> some View {
         
@@ -19,6 +20,7 @@ struct CloseModifier: ViewModifier {
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "xmark")
+                        .foregroundColor(colorScheme == .light ? .black : .white)
                 })
             }
     }

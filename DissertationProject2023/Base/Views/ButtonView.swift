@@ -20,8 +20,8 @@ struct ButtonView: View {
     private let cornerRadius: CGFloat = 10
     
     internal init(title: String,
-                  background: Color = .green,
-                  foreground: Color = .white,
+                  background: Color = .white,
+                  foreground: Color = .black,
                   border: Color = .clear,
                   handler: @escaping ButtonView.ActionHandler) {
         self.title = title
@@ -39,8 +39,8 @@ struct ButtonView: View {
         .background(background)
         .foregroundColor(foreground)
         .font(.system(size: 16, weight: .bold))
-        //.cornerRadius(cornerRadius)
-        .clipShape(Capsule())
+        .cornerRadius(cornerRadius)
+        //.clipShape(Capsule())
         .overlay(
             RoundedRectangle(cornerRadius: cornerRadius)
                 .stroke(border, lineWidth: 2)

@@ -16,13 +16,15 @@ struct InputTextFieldView: View {
     let sfSymbolColor: Color?
     
     private let textFieldLeading: CGFloat = 30
+    @FocusState private var fieldIsFocused: Bool
     
     var body: some View {
         TextField(placeholder, text: $text)
             .frame(maxWidth: .infinity,
-            minHeight: 44)
+            minHeight: 50)
             .padding(.leading, sfSymbol == nil ? textFieldLeading / 2 : textFieldLeading)
             .keyboardType(keyboardType)
+            .focused($fieldIsFocused)
             .background(
             
                 ZStack (alignment: .leading) {
@@ -32,13 +34,13 @@ struct InputTextFieldView: View {
                         Image(systemName: systemImage)
                             .font(.system(size: 16, weight: .semibold))
                             .padding(.leading, 5)
-                            .foregroundColor(sfSymbolColor?.opacity(0.5))
+                            .foregroundColor(sfSymbolColor?.opacity(fieldIsFocused ? 1 : 0.5))
                         
                     }
                     
                     RoundedRectangle(cornerRadius: 10,
                                      style: .continuous)
-                        .stroke(Color.gray.opacity(0.5))
+                        .stroke(Color.gray.opacity(fieldIsFocused ? 1 : 0.5))
                     
                 }
             )
@@ -55,7 +57,7 @@ struct InputTextFieldView_Previews: PreviewProvider {
                                keyboardType: .emailAddress,
                                sfSymbol: "envelope",
                                sfSymbolColor: .black)
-            .preview(with: "Email Text Inout with sfsymbol")
+            .preview(with: "Email Text Input with sfsymbol")
             
             InputTextFieldView(text: .constant(""),
                                placeholder: "First Name",

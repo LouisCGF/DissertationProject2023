@@ -13,8 +13,10 @@ struct InputPasswordView: View {
     @State var viewPassword: Bool
     let placeholder: String
     let sfSymbol: String?
+    let sfSymbolColor: Color?
     
     private let textFieldLeading: CGFloat = 30
+    @FocusState private var fieldIsFocused: Bool
     
     var body: some View {
         
@@ -23,8 +25,9 @@ struct InputPasswordView: View {
             if !viewPassword {
                 SecureField(placeholder, text: $password)
                     .frame(maxWidth: .infinity,
-                    minHeight: 44)
+                    minHeight: 50)
                     .padding(.leading, sfSymbol == nil ? textFieldLeading / 2 : textFieldLeading)
+                    .focused($fieldIsFocused)
                     .background(
                     
                         ZStack (alignment: .leading) {
@@ -34,7 +37,7 @@ struct InputPasswordView: View {
                                 Image(systemName: systemImage)
                                     .font(.system(size: 16, weight: .semibold))
                                     .padding(.leading, 3)
-                                    .foregroundColor(Color.white.opacity(0.5))
+                                    .foregroundColor(sfSymbolColor?.opacity(fieldIsFocused ? 1 : 0.5))
                                     .onTapGesture {
                                         viewPassword.toggle()
                                     }
@@ -43,15 +46,16 @@ struct InputPasswordView: View {
                             
                             RoundedRectangle(cornerRadius: 10,
                                              style: .continuous)
-                                .stroke(Color.gray.opacity(0.5))
+                                .stroke(Color.gray.opacity(fieldIsFocused ? 1 : 0.5))
                         }
                 )
                 
             } else {
                 TextField(placeholder, text: $password)
                     .frame(maxWidth: .infinity,
-                    minHeight: 44)
+                    minHeight: 50)
                     .padding(.leading, sfSymbol == nil ? textFieldLeading / 2 : textFieldLeading)
+                    .focused($fieldIsFocused)
                     .background(
                     
                         ZStack (alignment: .leading) {
@@ -61,7 +65,7 @@ struct InputPasswordView: View {
                                 Image(systemName: systemImage)
                                     .font(.system(size: 16, weight: .semibold))
                                     .padding(.leading, 3)
-                                    .foregroundColor(Color.white.opacity(0.5))
+                                    .foregroundColor(sfSymbolColor?.opacity(fieldIsFocused ? 1 : 0.5))
                                     .onTapGesture {
                                         viewPassword.toggle()
                                     }
@@ -70,7 +74,7 @@ struct InputPasswordView: View {
                             
                             RoundedRectangle(cornerRadius: 10,
                                              style: .continuous)
-                                .stroke(Color.gray.opacity(0.5))
+                                .stroke(Color.gray.opacity(fieldIsFocused ? 1 : 0.5))
                         }
                 )
             }
@@ -85,13 +89,15 @@ struct InputPasswordView_Previews: PreviewProvider {
             InputPasswordView(password: .constant(""),
                               viewPassword: false,
                               placeholder: "Password",
-                              sfSymbol: "eye.slash")
+                              sfSymbol: "eye.slash",
+                              sfSymbolColor: .black)
             .preview(with: "Input Password View with sfsymbol")
             
             InputPasswordView(password: .constant(""),
                               viewPassword: false,
                               placeholder: "Password",
-                              sfSymbol: nil)
+                              sfSymbol: nil,
+                              sfSymbolColor: .black)
             .preview(with: "Input Password View without sfsymbol")
         }
     }

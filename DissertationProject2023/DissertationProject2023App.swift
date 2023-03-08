@@ -23,6 +23,7 @@ struct DissertationProject2023App: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var sessionService = SessionServiceImpl()
+    @StateObject var googleViewModel = GoogleSignInViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -32,7 +33,8 @@ struct DissertationProject2023App: App {
                     HomeView()
                         .environmentObject(sessionService)
                 case .loggedOut:
-                    WelcomePageView()
+                    LoginView()
+                        .environmentObject(googleViewModel)
                 }
             }
         }
