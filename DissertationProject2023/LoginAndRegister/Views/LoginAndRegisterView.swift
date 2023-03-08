@@ -12,6 +12,7 @@ struct LoginAndRegisterView: View {
     @State var index = 0
     @State var viewPassword = false
     @State var viewConfPassword = false
+    @StateObject var viewModel = GoogleSignInViewModel()
     
     var body: some View {
         GeometryReader {_ in
@@ -48,6 +49,7 @@ struct LoginAndRegisterView: View {
                 
                 SocialIconsGroupView()
                     .padding(.vertical)
+                    .environmentObject(viewModel)
                 
             }
 

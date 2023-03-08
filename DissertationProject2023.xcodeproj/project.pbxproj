@@ -22,6 +22,7 @@
 		BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */; };
 		BF906A1729B65F8500B0E709 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1629B65F8500B0E709 /* GoogleSignIn */; };
 		BF906A1929B65F8500B0E709 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1829B65F8500B0E709 /* GoogleSignInSwift */; };
+		BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */; };
 		BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */; };
 		BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */; };
 		BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */; };
@@ -55,6 +56,8 @@
 		BF816F9729B3E3B400F6CA26 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BF816F9A29B3E79C00F6CA26 /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		BF906A1A29B660A900B0E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
 		BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		BF63D1D529B10C73004EDB65 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				BF906A1D29B683B100B0E709 /* GoogleSignInViewModel */,
 				BF816F9C29B3ECF200F6CA26 /* ForgotPasswordViewModel */,
 				BF816F9929B3E78600F6CA26 /* ForgotPasswordService */,
 				BF816F9629B3E39D00F6CA26 /* LoginViewModel */,
@@ -175,6 +179,14 @@
 				BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */,
 			);
 			path = ForgotPasswordViewModel;
+			sourceTree = "<group>";
+		};
+		BF906A1D29B683B100B0E709 /* GoogleSignInViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */,
+			);
+			path = GoogleSignInViewModel;
 			sourceTree = "<group>";
 		};
 		BFB6A1F229B2735F00FF84F5 /* Base */ = {
@@ -268,6 +280,7 @@
 		BFE0A5A129AFF9E900D47803 /* DissertationProject2023 */ = {
 			isa = PBXGroup;
 			children = (
+				BF906A1A29B660A900B0E709 /* Info.plist */,
 				BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */,
 				BFB6A1F229B2735F00FF84F5 /* Base */,
 				BF63D1D529B10C73004EDB65 /* LoginAndRegister */,
@@ -379,6 +392,7 @@
 				BF63D1D429B10B00004EDB65 /* WelcomePageView.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
 				BF816F9229B3E14900F6CA26 /* LoginCredentials.swift in Sources */,
+				BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */,
 				BF816F9529B3E1A000F6CA26 /* LoginService.swift in Sources */,
 				BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */,
 				BFB6A20829B28EA700FF84F5 /* RegistrationDetails.swift in Sources */,
@@ -526,6 +540,7 @@
 				DEVELOPMENT_TEAM = TW22ZPTJ5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DissertationProject2023/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -555,6 +570,7 @@
 				DEVELOPMENT_TEAM = TW22ZPTJ5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DissertationProject2023/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

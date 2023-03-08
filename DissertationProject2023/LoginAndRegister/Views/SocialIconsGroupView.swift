@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct SocialIconsGroupView: View {
+    
+    @EnvironmentObject var viewModel: GoogleSignInViewModel
+    
     var body: some View {
         HStack (alignment: .center, spacing: -5) {
             
             // Google
             Button {
-                
+                viewModel.googleSignIn()
+            
             } label: {
                 
                 SocialIconView(image: "btn_google_light_normal_ios")
