@@ -64,7 +64,7 @@ struct InputTextFieldView_Previews: PreviewProvider {
                                keyboardType: .default,
                                sfSymbol: nil,
                                sfSymbolColor: nil)
-            .preview(with: "First Name Text Inout with sfsymbol")
+            .preview(with: "First Name Text Input with sfsymbol")
         }
         
 
