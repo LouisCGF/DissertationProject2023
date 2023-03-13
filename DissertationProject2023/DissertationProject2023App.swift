@@ -24,19 +24,21 @@ struct DissertationProject2023App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var sessionService = SessionServiceImpl()
     @StateObject var googleViewModel = GoogleSignInViewModel()
+    @StateObject var modelData = ModelData()
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                switch sessionService.state {
-                case .loggedIn:
-                    HomeView()
-                        .environmentObject(sessionService)
-                case .loggedOut:
-                    LoginView()
-                        .environmentObject(googleViewModel)
-                }
+
+            switch sessionService.state {
+            case .loggedIn:
+                HomeView()
+                    .environmentObject(sessionService)
+                    .environmentObject(modelData)
+            case .loggedOut:
+                LoginView()
+                    .environmentObject(googleViewModel)
             }
+            
         }
     }
 }

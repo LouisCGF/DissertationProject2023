@@ -26,6 +26,7 @@
 		BFA175C729BFC47500B5EDB1 /* moduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA175C629BFC47500B5EDB1 /* moduleData.json */; };
 		BFA175C929BFC7E200B5EDB1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */; };
 		BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */; };
+		BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */; };
 		BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */; };
 		BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */; };
 		BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */; };
@@ -64,6 +65,7 @@
 		BFA175C629BFC47500B5EDB1 /* moduleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moduleData.json; sourceTree = "<group>"; };
 		BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
+		BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
@@ -243,6 +245,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BFA175CE29BFE0CA00B5EDB1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BFA175CF29BFE0D200B5EDB1 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BFA175CF29BFE0D200B5EDB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BFB6A1F229B2735F00FF84F5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +301,7 @@
 		BFB6A20029B2855A00FF84F5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BFA175CE29BFE0CA00B5EDB1 /* Profile */,
 				BFB6A20129B285D800FF84F5 /* View */,
 			);
 			path = Home;
@@ -445,6 +464,7 @@
 			files = (
 				BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */,
 				BFB6A20B29B28F1400FF84F5 /* RegistrationService.swift in Sources */,
+				BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
 				BFA175C229BFC39600B5EDB1 /* ModelData.swift in Sources */,

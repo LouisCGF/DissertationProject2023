@@ -10,31 +10,56 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
+    @EnvironmentObject var modelData: ModelData
+    
+    @State private var showingProfile = false
     
     var body: some View {
-        VStack (alignment: .leading, spacing: 16){
-            
-            VStack (alignment: .leading, spacing: 16) {
-                Text("Username: \(sessionService.userDetails?.userName ?? "N/A")")
-                Text("Email: \(sessionService.userDetails?.email ?? "N/A")")
-                
+ 
+        NavigationView {
+            List {
+                ForEach( Array(modelData.modules) ) { module in
+                    NavigationLink{
+                        
+                    } label: {
+                        ModuleCard(module: module)
+                            .padding(.top, 70)
+                            .padding(.leading, 15)
+                    }
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(
+                    Rectangle()
+                        .fill(
+                            LinearGradient(gradient: Gradient(colors: [Color("loginBackgroundColor"), Color("loginBackgroundColor2")]), startPoint: .leading, endPoint: .trailing)
+                        )
+                )
             }
-            
-            ButtonView(title: "Logout"){
-                sessionService.logout()
+            .listStyle(.inset)
+            .navigationTitle("Modules")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
             }
-            
+            .sheet(isPresented: $showingProfile) {
+                ProfileSummary()
+                    .environmentObject(sessionService)
+            }
         }
-        .padding(.horizontal, 16)
-        .navigationTitle("Main ContentView")
+
+
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            HomeView()
-                .environmentObject(SessionServiceImpl())
-        }
+
+        HomeView()
+            .environmentObject(SessionServiceImpl())
+            .environmentObject(ModelData())
+
     }
 }
