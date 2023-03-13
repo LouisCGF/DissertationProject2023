@@ -21,6 +21,11 @@
 		BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */; };
 		BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98302329B8FF6C0028D6D1 /* LoginView.swift */; };
 		BF98302629B918C20028D6D1 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98302529B918C20028D6D1 /* RegisterView.swift */; };
+		BFA175C229BFC39600B5EDB1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C129BFC39600B5EDB1 /* ModelData.swift */; };
+		BFA175C429BFC3C000B5EDB1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C329BFC3C000B5EDB1 /* Module.swift */; };
+		BFA175C729BFC47500B5EDB1 /* moduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA175C629BFC47500B5EDB1 /* moduleData.json */; };
+		BFA175C929BFC7E200B5EDB1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */; };
+		BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */; };
 		BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */; };
 		BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */; };
 		BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */; };
@@ -54,6 +59,11 @@
 		BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
 		BF98302329B8FF6C0028D6D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF98302529B918C20028D6D1 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BFA175C129BFC39600B5EDB1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BFA175C329BFC3C000B5EDB1 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		BFA175C629BFC47500B5EDB1 /* moduleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moduleData.json; sourceTree = "<group>"; };
+		BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
 		BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
@@ -216,6 +226,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BFA175C029BFC31A00B5EDB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFA175C129BFC39600B5EDB1 /* ModelData.swift */,
+				BFA175C329BFC3C000B5EDB1 /* Module.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFA175C529BFC3FF00B5EDB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFA175C629BFC47500B5EDB1 /* moduleData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BFB6A1F229B2735F00FF84F5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +258,7 @@
 				BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */,
 				BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */,
 				BFB6A1FB29B27A4800FF84F5 /* ButtonView.swift */,
+				BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB6A20229B285F100FF84F5 /* HomeView.swift */,
+				BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +341,8 @@
 				BF63D1D529B10C73004EDB65 /* ForgotPassword */,
 				BF816F8529B3C20B00F6CA26 /* Session */,
 				BFB6A20029B2855A00FF84F5 /* Home */,
+				BFA175C529BFC3FF00B5EDB1 /* Resources */,
+				BFA175C029BFC31A00B5EDB1 /* Model */,
 				BFE0A5A429AFF9E900D47803 /* ContentView.swift */,
 				BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */,
 				BF816F8E29B3DA2F00F6CA26 /* GoogleService-Info.plist */,
@@ -401,6 +432,7 @@
 				BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */,
 				BF816F8F29B3DA2F00F6CA26 /* GoogleService-Info.plist in Resources */,
 				BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */,
+				BFA175C729BFC47500B5EDB1 /* moduleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +447,10 @@
 				BFB6A20B29B28F1400FF84F5 /* RegistrationService.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
+				BFA175C229BFC39600B5EDB1 /* ModelData.swift in Sources */,
+				BFA175C429BFC3C000B5EDB1 /* Module.swift in Sources */,
 				BF816F9229B3E14900F6CA26 /* LoginCredentials.swift in Sources */,
+				BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */,
 				BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */,
 				BF816F9529B3E1A000F6CA26 /* LoginService.swift in Sources */,
 				BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */,
@@ -433,6 +468,7 @@
 				BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */,
 				BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */,
 				BF816F9829B3E3B400F6CA26 /* LoginViewModel.swift in Sources */,
+				BFA175C929BFC7E200B5EDB1 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

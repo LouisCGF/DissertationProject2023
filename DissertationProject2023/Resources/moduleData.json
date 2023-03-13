@@ -1,0 +1,38 @@
+[
+    {
+        "title": "SQL Injection",
+        "id": 1001,
+        "shortDescription": "Learn the basics of one of the most common web hacking techniques",
+        "imageName": "sql-injection-module-img"
+    },
+    {
+        "title": "Network Reconnaissance",
+        "id": 1002,
+        "shortDescription": "Use the NMAP tool to identify potential attack vectors of a network",
+        "imageName": "network-recon-module-img"
+    },
+    {
+        "title": "Cross-site Scripting",
+        "id": 1003,
+        "shortDescription": "Manipulate a vulnerable web application to return malicious JavaScript",
+        "imageName": "xss-module-img"
+    },
+    {
+        "title": "Basic Password Cracking",
+        "id": 1004,
+        "shortDescription": "Use the Hashcat tool to crack hashed passwords",
+        "imageName": "password-cracking-module-img"
+    },
+    {
+        "title": "Open-source intelligence (OSINT) Investigation",
+        "id": 1005,
+        "shortDescription": "Gather information from public sources such as search engines, websites or government databases",
+        "imageName": "osint-module-img"
+    },
+    {
+        "title": "Legal and Ethics",
+        "id": 1006,
+        "shortDescription": "Be informed about the legal and ethical issues surrounding penetration testing",
+        "imageName": "legal-and-ethics-module-img"
+    }
+]
