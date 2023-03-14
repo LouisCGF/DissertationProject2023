@@ -1,0 +1,11 @@
+[
+    {
+        "intro": "SQL (Structured Query Language) injection is one of the most common web hacking techniques. It is used to gain unauthorized access to a web application database by adding a string of malicious code to a database query.",
+        "section1": "In short, SQL lets you access and manipulate databases. It is a standard programming language that you can use to retrieve, insert or update data in a database, create a new database or database table or even set permissions on tables. Below is an example of an SQL query:",
+        "selectDescription": "This statement is used to select data from a database. You must specify which column you want to select directly after this statement.",
+        "usernameDescription": "This is the specified column that the SELECT statement will use. It will be returned in a result table (also known as a result-set).",
+        "fromDescription": "This statement is used to select from which table in the database the selected data should be retrieved. You must specify the table directly after this statement.",
+        "usersDescription": "This is the specified table that the FROM statement will use.",
+        "semiColonDescription": "Finally, the semi colon is used to terminate the query. It simply states that the query has ended."
+    }
+]

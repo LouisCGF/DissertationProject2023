@@ -40,6 +40,16 @@
 		BFB6A21029B2910700FF84F5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A20F29B2910700FF84F5 /* FirebaseDatabase */; };
 		BFB6A21229B2910700FF84F5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A21129B2910700FF84F5 /* FirebaseFirestore */; };
 		BFB6A21429B2910700FF84F5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6A21329B2910700FF84F5 /* FirebaseStorage */; };
+		BFD5949B29C0A09A00C7820F /* SQLInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5949A29C0A09A00C7820F /* SQLInjectionView.swift */; };
+		BFD5949E29C0A1AB00C7820F /* NetworkReconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5949D29C0A1AB00C7820F /* NetworkReconView.swift */; };
+		BFD594A029C0A2C000C7820F /* ModuleViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5949F29C0A2C000C7820F /* ModuleViewHandler.swift */; };
+		BFD594A329C0A3DE00C7820F /* XSSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594A229C0A3DE00C7820F /* XSSView.swift */; };
+		BFD594A629C0A40300C7820F /* PasswordCrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594A529C0A40300C7820F /* PasswordCrackingView.swift */; };
+		BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594A829C0A42800C7820F /* OSINTView.swift */; };
+		BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594AB29C0A45C00C7820F /* LegalAndEthicsView.swift */; };
+		BFD594AE29C0AA4300C7820F /* SQLInjectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFD594AD29C0AA4300C7820F /* SQLInjectionData.json */; };
+		BFD594B229C0AC1B00C7820F /* SQLInjectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594B129C0AC1B00C7820F /* SQLInjectionData.swift */; };
+		BFD594B429C0AFA600C7820F /* Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD594B329C0AFA600C7820F /* Page1.swift */; };
 		BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */; };
 		BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A429AFF9E900D47803 /* ContentView.swift */; };
 		BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */; };
@@ -75,6 +85,16 @@
 		BFB6A20429B286F500FF84F5 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		BFB6A20729B28EA700FF84F5 /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
 		BFB6A20A29B28F1400FF84F5 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		BFD5949A29C0A09A00C7820F /* SQLInjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInjectionView.swift; sourceTree = "<group>"; };
+		BFD5949D29C0A1AB00C7820F /* NetworkReconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReconView.swift; sourceTree = "<group>"; };
+		BFD5949F29C0A2C000C7820F /* ModuleViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewHandler.swift; sourceTree = "<group>"; };
+		BFD594A229C0A3DE00C7820F /* XSSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSSView.swift; sourceTree = "<group>"; };
+		BFD594A529C0A40300C7820F /* PasswordCrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCrackingView.swift; sourceTree = "<group>"; };
+		BFD594A829C0A42800C7820F /* OSINTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSINTView.swift; sourceTree = "<group>"; };
+		BFD594AB29C0A45C00C7820F /* LegalAndEthicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAndEthicsView.swift; sourceTree = "<group>"; };
+		BFD594AD29C0AA4300C7820F /* SQLInjectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SQLInjectionData.json; sourceTree = "<group>"; };
+		BFD594B129C0AC1B00C7820F /* SQLInjectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInjectionData.swift; sourceTree = "<group>"; };
+		BFD594B329C0AFA600C7820F /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
 		BFE0A59F29AFF9E900D47803 /* DissertationProject2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DissertationProject2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationProject2023App.swift; sourceTree = "<group>"; };
 		BFE0A5A429AFF9E900D47803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -233,6 +253,7 @@
 			children = (
 				BFA175C129BFC39600B5EDB1 /* ModelData.swift */,
 				BFA175C329BFC3C000B5EDB1 /* Module.swift */,
+				BFD594B129C0AC1B00C7820F /* SQLInjectionData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA175C629BFC47500B5EDB1 /* moduleData.json */,
+				BFD594AD29C0AA4300C7820F /* SQLInjectionData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -332,6 +354,69 @@
 			path = RegistrationService;
 			sourceTree = "<group>";
 		};
+		BFD5949829C0A05800C7820F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BFD594AA29C0A44900C7820F /* LegalAndEthics */,
+				BFD594A729C0A41C00C7820F /* OSINT */,
+				BFD594A429C0A3F300C7820F /* PasswordCracking */,
+				BFD594A129C0A3D000C7820F /* XSS */,
+				BFD5949C29C0A19900C7820F /* NetworkRecon */,
+				BFD5949929C0A06600C7820F /* SQLInjection */,
+				BFD5949F29C0A2C000C7820F /* ModuleViewHandler.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BFD5949929C0A06600C7820F /* SQLInjection */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5949A29C0A09A00C7820F /* SQLInjectionView.swift */,
+				BFD594B329C0AFA600C7820F /* Page1.swift */,
+			);
+			path = SQLInjection;
+			sourceTree = "<group>";
+		};
+		BFD5949C29C0A19900C7820F /* NetworkRecon */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5949D29C0A1AB00C7820F /* NetworkReconView.swift */,
+			);
+			path = NetworkRecon;
+			sourceTree = "<group>";
+		};
+		BFD594A129C0A3D000C7820F /* XSS */ = {
+			isa = PBXGroup;
+			children = (
+				BFD594A229C0A3DE00C7820F /* XSSView.swift */,
+			);
+			path = XSS;
+			sourceTree = "<group>";
+		};
+		BFD594A429C0A3F300C7820F /* PasswordCracking */ = {
+			isa = PBXGroup;
+			children = (
+				BFD594A529C0A40300C7820F /* PasswordCrackingView.swift */,
+			);
+			path = PasswordCracking;
+			sourceTree = "<group>";
+		};
+		BFD594A729C0A41C00C7820F /* OSINT */ = {
+			isa = PBXGroup;
+			children = (
+				BFD594A829C0A42800C7820F /* OSINTView.swift */,
+			);
+			path = OSINT;
+			sourceTree = "<group>";
+		};
+		BFD594AA29C0A44900C7820F /* LegalAndEthics */ = {
+			isa = PBXGroup;
+			children = (
+				BFD594AB29C0A45C00C7820F /* LegalAndEthicsView.swift */,
+			);
+			path = LegalAndEthics;
+			sourceTree = "<group>";
+		};
 		BFE0A59629AFF9E800D47803 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +446,7 @@
 				BF816F8529B3C20B00F6CA26 /* Session */,
 				BFB6A20029B2855A00FF84F5 /* Home */,
 				BFA175C529BFC3FF00B5EDB1 /* Resources */,
+				BFD5949829C0A05800C7820F /* Modules */,
 				BFA175C029BFC31A00B5EDB1 /* Model */,
 				BFE0A5A429AFF9E900D47803 /* ContentView.swift */,
 				BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */,
@@ -449,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */,
+				BFD594AE29C0AA4300C7820F /* SQLInjectionData.json in Resources */,
 				BF816F8F29B3DA2F00F6CA26 /* GoogleService-Info.plist in Resources */,
 				BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */,
 				BFA175C729BFC47500B5EDB1 /* moduleData.json in Resources */,
@@ -465,8 +552,13 @@
 				BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */,
 				BFB6A20B29B28F1400FF84F5 /* RegistrationService.swift in Sources */,
 				BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */,
+				BFD5949B29C0A09A00C7820F /* SQLInjectionView.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
+				BFD594A629C0A40300C7820F /* PasswordCrackingView.swift in Sources */,
+				BFD594A329C0A3DE00C7820F /* XSSView.swift in Sources */,
+				BFD594A029C0A2C000C7820F /* ModuleViewHandler.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
+				BFD5949E29C0A1AB00C7820F /* NetworkReconView.swift in Sources */,
 				BFA175C229BFC39600B5EDB1 /* ModelData.swift in Sources */,
 				BFA175C429BFC3C000B5EDB1 /* Module.swift in Sources */,
 				BF816F9229B3E14900F6CA26 /* LoginCredentials.swift in Sources */,
@@ -477,13 +569,17 @@
 				BFB6A20829B28EA700FF84F5 /* RegistrationDetails.swift in Sources */,
 				BFB6A1FF29B2812F00FF84F5 /* CloseModifier.swift in Sources */,
 				BF816F9B29B3E79C00F6CA26 /* ForgotPasswordService.swift in Sources */,
+				BFD594B429C0AFA600C7820F /* Page1.swift in Sources */,
 				BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
 				BF98302629B918C20028D6D1 /* RegisterView.swift in Sources */,
+				BFD594B229C0AC1B00C7820F /* SQLInjectionData.swift in Sources */,
 				BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */,
+				BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
 				BFB6A20529B286F500FF84F5 /* ForgotPasswordView.swift in Sources */,
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
+				BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */,
 				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,
 				BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */,
 				BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */,

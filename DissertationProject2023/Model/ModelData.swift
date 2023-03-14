@@ -10,7 +10,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var modules: [Module] = load("moduleData.json")
-    //@Published var profile = Profile.default
+    @Published var sqlInjectionData: [SQLInjectionData] = load("SQLInjectionData.json")
     
 }
 

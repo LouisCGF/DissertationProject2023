@@ -20,7 +20,7 @@ struct HomeView: View {
             List {
                 ForEach( Array(modelData.modules) ) { module in
                     NavigationLink{
-                        
+                        ModuleViewHandler(module: module)
                     } label: {
                         ModuleCard(module: module)
                             .padding(.top, 70)
@@ -49,8 +49,6 @@ struct HomeView: View {
                     .environmentObject(sessionService)
             }
         }
-
-
     }
 }
 
