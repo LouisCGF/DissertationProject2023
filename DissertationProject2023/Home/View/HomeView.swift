@@ -11,8 +11,11 @@ struct HomeView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
     @EnvironmentObject var modelData: ModelData
+    @Environment(\.colorScheme) var colorScheme
     
     @State private var showingProfile = false
+    
+    private let colours: [Color] = [.indigo, .pink, .blue, .teal, .purple, .yellow]
     
     var body: some View {
  
@@ -22,8 +25,8 @@ struct HomeView: View {
                     NavigationLink{
                         ModuleViewHandler(module: module)
                     } label: {
-                        ModuleCard(module: module)
-                            .padding(.top, 70)
+                        ModuleCard(module: module, colour: colours[module.id - 1001])
+                            .padding(.top, 50)
                             .padding(.leading, 15)
                     }
                 }
@@ -31,7 +34,7 @@ struct HomeView: View {
                 .listRowBackground(
                     Rectangle()
                         .fill(
-                            LinearGradient(gradient: Gradient(colors: [Color("loginBackgroundColor"), Color("loginBackgroundColor2")]), startPoint: .leading, endPoint: .trailing)
+                            colorScheme == .dark ? LinearGradient(gradient: Gradient(colors: [Color("loginBackgroundColor"), Color("loginBackgroundColor2")]), startPoint: .leading, endPoint: .trailing) : LinearGradient(gradient: Gradient(colors: [.white, Color("lightModeHomePage")]), startPoint: .leading, endPoint: .trailing)
                         )
                 )
             }

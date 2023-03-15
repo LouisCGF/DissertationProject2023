@@ -10,40 +10,49 @@ import SwiftUI
 struct ModuleCard: View {
     
     var module: Module
+    var colour: Color?
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .cornerRadius(15)
-                .aspectRatio(contentMode: .fit)
-                .foregroundColor(.gray)
+            RoundedRectangle(cornerRadius: 30)
+                .aspectRatio(3/2, contentMode: .fit)
+                .foregroundColor(colour ?? .gray)
                 .frame(width: 350)
             
-            CircleImage(image: module.image)
-                .frame(height: 200)
-                .offset(y: -145)
-                .padding()
-
-            VStack (alignment: .leading){
-                HStack {
-                    Text(module.title)
-                        .font(.title)
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                }
-                .padding(.top, 90)
-                .padding(.leading)
-                
-                HStack {
-                    Text(module.shortDescription)
-                        .font(.subheadline)
-                        .foregroundColor(.white)
-                        .opacity(0.4)
-                    Spacer()
-                }
-                .padding()
+            HStack {
+                CircleImage(image: module.image)
+                    .frame(height: 100)
+                    .offset(x: 140, y: -95)
+                    .padding()
             }
+            
+            VStack (alignment: .leading){
+                Text(module.title)
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .fontWeight(.semibold)
+                    .padding(.bottom, 10)
+                
+                
+                Text(module.shortDescription)
+                    .font(.footnote)
+                    .foregroundColor(.white)
+                    .opacity(0.5)
+                    .fontWeight(.semibold)
+                    .padding(.bottom, 10)
+                
+                Text("Progress")
+                    .foregroundColor(.white)
+                    .font(.caption)
+                    .padding(.bottom, -10)
+                    .opacity(0.7)
+                    .fontWeight(.heavy)
+                ProgressView("", value: 15, total: 100)
+                    .foregroundColor(.white)
+                    .tint(.green)
+            }
+            .padding()
+
 
         }
         .padding()
