@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF28209929C397680022760E /* UnixTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28209829C397680022760E /* UnixTerminalView.swift */; };
 		BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8329B3BB4C00F6CA26 /* RegistrationViewModel.swift */; };
 		BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8729B3C26700F6CA26 /* SessionUserDetails.swift */; };
 		BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F8A29B3C2E000F6CA26 /* SessionService.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF28209829C397680022760E /* UnixTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTerminalView.swift; sourceTree = "<group>"; };
 		BF816F8329B3BB4C00F6CA26 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		BF816F8729B3C26700F6CA26 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 		BF816F8A29B3C2E000F6CA26 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
@@ -119,6 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF28209629C397410022760E /* UnixTerminal */ = {
+			isa = PBXGroup;
+			children = (
+				BF28209729C397580022760E /* View */,
+			);
+			path = UnixTerminal;
+			sourceTree = "<group>";
+		};
+		BF28209729C397580022760E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF28209829C397680022760E /* UnixTerminalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BF63D1D529B10C73004EDB65 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +457,7 @@
 				BF906A1A29B660A900B0E709 /* Info.plist */,
 				BFE0A5A229AFF9E900D47803 /* DissertationProject2023App.swift */,
 				BFB6A1F229B2735F00FF84F5 /* Base */,
+				BF28209629C397410022760E /* UnixTerminal */,
 				BF98302929B9366F0028D6D1 /* Register */,
 				BF98302729B936260028D6D1 /* Login */,
 				BF906A1D29B683B100B0E709 /* GoogleSignInViewModel */,
@@ -551,6 +570,7 @@
 			files = (
 				BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */,
 				BFB6A20B29B28F1400FF84F5 /* RegistrationService.swift in Sources */,
+				BF28209929C397680022760E /* UnixTerminalView.swift in Sources */,
 				BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */,
 				BFD5949B29C0A09A00C7820F /* SQLInjectionView.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,

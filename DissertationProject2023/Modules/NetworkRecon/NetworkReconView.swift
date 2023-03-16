@@ -9,7 +9,10 @@ import SwiftUI
 
 struct NetworkReconView: View {
     var body: some View {
-        Text("<Placeholder NetworkRecon>")
+        VStack {
+            UnixTerminalView()
+                .frame(height: 400)
+        }
     }
 }
 
