@@ -11,19 +11,64 @@ struct SQLInjectionView: View {
     
     private let sqlInjectionData = ModelData().sqlInjectionData
     
+    @State private var selectedItem = 1
+    
     var body: some View {
-        TabView {
-            Page1()
+            
+        VStack {
+            
+            ZStack (alignment: .leading) {
+                
+                Rectangle()
+                    .fill(.indigo)
+                    .frame(width: 130)
+                    .cornerRadius(5)
+                    .ignoresSafeArea()
+                
+                TabView (selection: $selectedItem) {
+                    ZStack {
+                        
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(.white)
+  
+                        Page1()
+                    }
+                    .tag(1)
+                    .padding(.bottom, 60)
+                    
+                    
+                    Text("Page \(selectedItem)")
+                        .tag(2)
+                    
+                    Text("Page \(selectedItem)")
+                        .tag(3)
+                }
+                .padding()
+                .tabViewStyle(PageTabViewStyle())
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                
+                CircleImage(image: Image("sql-injection-module-img"))
+                    .frame(height: 100)
+                    .offset(x: 140, y: -300)
+                    .padding()
+                
+                ProgressView("", value: (Double(selectedItem) / 3) * 100, total: 100)
+                    .foregroundColor(.white)
+                    .tint(.green)
+                    .padding([.leading, .trailing])
+                    .padding(.bottom, 100)
+                    .offset(y: 380)
+            }
 
             
-            Text("Page 2")
+
             
-            Text("Page 3")
         }
-        .padding()
-        .tabViewStyle(PageTabViewStyle())
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-        .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.918))
+        .background(.white)
+        //.padding(.bottom, 80)
+        
+        
+
     }
 }
 

@@ -13,34 +13,43 @@ struct Page1: View {
     
     var body: some View {
         ScrollView (.vertical){
-            VStack (alignment: .leading, spacing: 15){
+   
+            VStack (alignment: .leading){
+                
                 Text("Introduction")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .foregroundColor(Color(.systemIndigo))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 50)
                 
                 Text(sqlInjectionData.intro)
-                    .font(.callout)
-                
-                Spacer()
+                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .multilineTextAlignment(.leading)
+                    .padding(.top, 5)
                 
                 Text("What is SQL?")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .foregroundColor(Color(.systemIndigo))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 50)
                 
                 Text(sqlInjectionData.section1)
-                    .font(.callout)
-                
-                Spacer()
+                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .multilineTextAlignment(.leading)
+                //.padding([.leading, .trailing], 30)
+                    .padding(.top, 5)
                 
                 Image("query1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Capsule())
-                
-                Spacer()
+                    .padding()
                 
                 Text("Let's break this query down...")
-                    .font(.callout)
+                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .multilineTextAlignment(.leading)
+                //.padding([.leading, .trailing], 30)
+                    .padding(.top, 5)
                 
                 Group {
                     HStack { // <- SELECT
@@ -51,11 +60,14 @@ struct Page1: View {
                             .frame(height: 25)
                         
                         Spacer()
-
+                        
                         Text(sqlInjectionData.selectDescription)
-                            .font(.caption)
+                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .multilineTextAlignment(.leading)
+                        //.padding([.leading, .trailing], 30)
+                            .padding(.top, 5)
                     }
-
+                    
                     Divider()
                     
                     HStack { // <- username
@@ -66,9 +78,12 @@ struct Page1: View {
                             .frame(height: 25)
                         
                         Spacer()
-
+                        
                         Text(sqlInjectionData.usernameDescription)
-                            .font(.caption)
+                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .multilineTextAlignment(.leading)
+                        //.padding([.leading, .trailing], 30)
+                            .padding(.top, 5)
                     }
                     
                     Divider()
@@ -81,9 +96,12 @@ struct Page1: View {
                             .frame(height: 25)
                         
                         Spacer()
-
+                        
                         Text(sqlInjectionData.fromDescription)
-                            .font(.caption)
+                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .multilineTextAlignment(.leading)
+                        //.padding([.leading, .trailing], 30)
+                            .padding(.top, 5)
                     }
                     
                     Divider()
@@ -96,9 +114,12 @@ struct Page1: View {
                             .frame(height: 25)
                         
                         Spacer()
-
+                        
                         Text(sqlInjectionData.usersDescription)
-                            .font(.caption)
+                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .multilineTextAlignment(.leading)
+                        //.padding([.leading, .trailing], 30)
+                            .padding(.top, 5)
                     }
                     
                     Divider()
@@ -112,17 +133,21 @@ struct Page1: View {
                             .padding(.trailing, 50)
                         
                         Text(sqlInjectionData.semiColonDescription)
-                            .font(.caption)
+                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .multilineTextAlignment(.leading)
+                        //.padding([.leading, .trailing], 30)
+                            .padding(.top, 5)
                     }
+                    .padding()
+                    
+                    
+                    
                 }
-                .padding()
-                
-
-                
+                .padding(.top, 20)
             }
+            .padding()
             .foregroundColor(.black)
-
-
+            
         }
     }
 }
