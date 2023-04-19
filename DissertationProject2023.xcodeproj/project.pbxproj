@@ -35,6 +35,11 @@
 		BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */; };
 		BFA4880529F0283300F4EA37 /* Page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880429F0283300F4EA37 /* Page4.swift */; };
 		BFA4880729F02A6E00F4EA37 /* PHPTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880629F02A6E00F4EA37 /* PHPTextView.swift */; };
+		BFA4880929F05FDF00F4EA37 /* NRPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880829F05FDF00F4EA37 /* NRPage1.swift */; };
+		BFA4880B29F0670500F4EA37 /* NRPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880A29F0670500F4EA37 /* NRPage2.swift */; };
+		BFA4880D29F0683600F4EA37 /* networkReconData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA4880C29F0683600F4EA37 /* networkReconData.json */; };
+		BFA4880F29F0687600F4EA37 /* NetworkReconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */; };
+		BFA4881129F06DE400F4EA37 /* NmapCommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */; };
 		BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */; };
 		BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */; };
 		BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88E29F005F5005AF7E8 /* Page3.swift */; };
@@ -95,6 +100,11 @@
 		BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		BFA4880429F0283300F4EA37 /* Page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4.swift; sourceTree = "<group>"; };
 		BFA4880629F02A6E00F4EA37 /* PHPTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPTextView.swift; sourceTree = "<group>"; };
+		BFA4880829F05FDF00F4EA37 /* NRPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage1.swift; sourceTree = "<group>"; };
+		BFA4880A29F0670500F4EA37 /* NRPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage2.swift; sourceTree = "<group>"; };
+		BFA4880C29F0683600F4EA37 /* networkReconData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networkReconData.json; sourceTree = "<group>"; };
+		BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReconData.swift; sourceTree = "<group>"; };
+		BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmapCommandsView.swift; sourceTree = "<group>"; };
 		BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPortalView.swift; sourceTree = "<group>"; };
 		BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessfulView.swift; sourceTree = "<group>"; };
 		BFB1F88E29F005F5005AF7E8 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
@@ -292,6 +302,7 @@
 				BFA175C129BFC39600B5EDB1 /* ModelData.swift */,
 				BFA175C329BFC3C000B5EDB1 /* Module.swift */,
 				BFD594B129C0AC1B00C7820F /* SQLInjectionData.swift */,
+				BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +312,7 @@
 			children = (
 				BFA175C629BFC47500B5EDB1 /* moduleData.json */,
 				BFD594AD29C0AA4300C7820F /* SQLInjectionData.json */,
+				BFA4880C29F0683600F4EA37 /* networkReconData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -429,6 +441,9 @@
 			isa = PBXGroup;
 			children = (
 				BFD5949D29C0A1AB00C7820F /* NetworkReconView.swift */,
+				BFA4880829F05FDF00F4EA37 /* NRPage1.swift */,
+				BFA4880A29F0670500F4EA37 /* NRPage2.swift */,
+				BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */,
 			);
 			path = NetworkRecon;
 			sourceTree = "<group>";
@@ -583,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA4880D29F0683600F4EA37 /* networkReconData.json in Resources */,
 				BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */,
 				BFD594AE29C0AA4300C7820F /* SQLInjectionData.json in Resources */,
 				BF816F8F29B3DA2F00F6CA26 /* GoogleService-Info.plist in Resources */,
@@ -608,6 +624,7 @@
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
 				BFD594A629C0A40300C7820F /* PasswordCrackingView.swift in Sources */,
 				BFD594A329C0A3DE00C7820F /* XSSView.swift in Sources */,
+				BFA4880B29F0670500F4EA37 /* NRPage2.swift in Sources */,
 				BFD594A029C0A2C000C7820F /* ModuleViewHandler.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
 				BF9D773C29EF4D18007B8C25 /* SubheadingView.swift in Sources */,
@@ -618,12 +635,14 @@
 				BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */,
 				BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */,
 				BF9D773A29EF4C81007B8C25 /* HeadingTextView.swift in Sources */,
+				BFA4880929F05FDF00F4EA37 /* NRPage1.swift in Sources */,
 				BF816F9529B3E1A000F6CA26 /* LoginService.swift in Sources */,
 				BF9D774029EF5179007B8C25 /* SQLTextView.swift in Sources */,
 				BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */,
 				BFB6A20829B28EA700FF84F5 /* RegistrationDetails.swift in Sources */,
 				BFB6A1FF29B2812F00FF84F5 /* CloseModifier.swift in Sources */,
 				BF816F9B29B3E79C00F6CA26 /* ForgotPasswordService.swift in Sources */,
+				BFA4880F29F0687600F4EA37 /* NetworkReconData.swift in Sources */,
 				BFD594B429C0AFA600C7820F /* Page1.swift in Sources */,
 				BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
@@ -632,6 +651,7 @@
 				BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */,
 				BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */,
 				BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */,
+				BFA4881129F06DE400F4EA37 /* NmapCommandsView.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
 				BFA4880529F0283300F4EA37 /* Page4.swift in Sources */,
 				BF9D773E29EF4D96007B8C25 /* Subheading2View.swift in Sources */,

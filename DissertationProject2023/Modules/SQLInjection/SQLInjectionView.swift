@@ -32,6 +32,9 @@ struct SQLInjectionView: View {
                         .cornerRadius(15)
                         .padding(.bottom, 60)
                         .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                     
                     
                     Page2()
@@ -39,6 +42,9 @@ struct SQLInjectionView: View {
                         .cornerRadius(15)
                         .padding(.bottom, 60)
                         .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                     
                     
                     Page3()
@@ -46,12 +52,18 @@ struct SQLInjectionView: View {
                         .cornerRadius(15)
                         .padding(.bottom, 60)
                         .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                     
                     Page4()
                         .tag(4)
                         .cornerRadius(15)
                         .padding(.bottom, 60)
                         .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())

@@ -11,6 +11,7 @@ import Combine
 final class ModelData: ObservableObject {
     @Published var modules: [Module] = load("moduleData.json")
     @Published var sqlInjectionData: [SQLInjectionData] = load("SQLInjectionData.json")
+    @Published var networkReconData: [NetworkReconData] = load("networkReconData.json")
     
 }
 
