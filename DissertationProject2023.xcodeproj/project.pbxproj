@@ -33,6 +33,8 @@
 		BFA175C929BFC7E200B5EDB1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */; };
 		BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */; };
 		BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */; };
+		BFA4880529F0283300F4EA37 /* Page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880429F0283300F4EA37 /* Page4.swift */; };
+		BFA4880729F02A6E00F4EA37 /* PHPTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880629F02A6E00F4EA37 /* PHPTextView.swift */; };
 		BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */; };
 		BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */; };
 		BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88E29F005F5005AF7E8 /* Page3.swift */; };
@@ -91,6 +93,8 @@
 		BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
 		BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		BFA4880429F0283300F4EA37 /* Page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4.swift; sourceTree = "<group>"; };
+		BFA4880629F02A6E00F4EA37 /* PHPTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPTextView.swift; sourceTree = "<group>"; };
 		BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPortalView.swift; sourceTree = "<group>"; };
 		BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessfulView.swift; sourceTree = "<group>"; };
 		BFB1F88E29F005F5005AF7E8 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
@@ -415,6 +419,8 @@
 				BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */,
 				BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */,
 				BFB1F88E29F005F5005AF7E8 /* Page3.swift */,
+				BFA4880429F0283300F4EA37 /* Page4.swift */,
+				BFA4880629F02A6E00F4EA37 /* PHPTextView.swift */,
 			);
 			path = SQLInjection;
 			sourceTree = "<group>";
@@ -627,9 +633,11 @@
 				BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */,
 				BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
+				BFA4880529F0283300F4EA37 /* Page4.swift in Sources */,
 				BF9D773E29EF4D96007B8C25 /* Subheading2View.swift in Sources */,
 				BFB6A20529B286F500FF84F5 /* ForgotPasswordView.swift in Sources */,
 				BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */,
+				BFA4880729F02A6E00F4EA37 /* PHPTextView.swift in Sources */,
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
 				BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */,
 				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,

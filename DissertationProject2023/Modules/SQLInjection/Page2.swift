@@ -29,7 +29,7 @@ struct Page2: View {
                     
                     SubheadingView(text: sqlInjectionData.section3_2)
                     
-                    SQLTextView(sqlCode: "SELECT * FROM users WHERE username = '[INPUT_USERNAME]' AND password = '[INPUT_PASSWORD]';")
+                    SQLTextView(sqlCode: sqlInjectionData.query2)
                     
                     SubheadingView(text: sqlInjectionData.section3_3)
                     
@@ -43,15 +43,15 @@ struct Page2: View {
                     
                     SubheadingView(text: sqlInjectionData.section3_4)
                     
-                    SQLTextView(sqlCode: "SELECT * FROM users WHERE username = 'johndoe' AND password = 'mySecurePass';")
+                    SQLTextView(sqlCode: sqlInjectionData.query3)
                     
                     SubheadingView(text: sqlInjectionData.section3_5)
                     
-                    SQLTextView(sqlCode: "' OR 1=1 --")
+                    SQLTextView(sqlCode: sqlInjectionData.query4)
                     
                     SubheadingView(text: sqlInjectionData.section3_6)
                     
-                    SQLTextView(sqlCode: "SELECT * FROM users WHERE username = '' OR 1=1 --'AND‎‎‎‎ㅤㅤㅤㅤ‎password='[INPUT_PASSWORD]';")
+                    SQLTextView(sqlCode: sqlInjectionData.query5)
                     
                     SubheadingView(text: sqlInjectionData.section3_7)
                     

@@ -46,6 +46,12 @@ struct SQLInjectionView: View {
                         .cornerRadius(15)
                         .padding(.bottom, 60)
                         .padding(.trailing, 15)
+                    
+                    Page4()
+                        .tag(4)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())
@@ -66,7 +72,7 @@ struct SQLInjectionView: View {
                         fullscreen.toggle()
                     }
                 
-                ProgressView("", value: (Double(selectedItem) / 3) * 100, total: 100)
+                ProgressView("", value: (Double(selectedItem) / 4) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
@@ -81,6 +87,8 @@ struct SQLInjectionView: View {
                     Page2()
                 case 3:
                     Page3()
+                case 4:
+                    Page4()
                 default:
                     Page1()
                 }

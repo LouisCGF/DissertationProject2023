@@ -24,7 +24,7 @@ struct Page1: View {
                 
                 SubheadingView(text: sqlInjectionData.section1)
                 
-                SQLTextView(sqlCode: "SELECT username FROM users;")
+                SQLTextView(sqlCode: sqlInjectionData.query1)
                 
                 SubheadingView(text: "Let's break this query down...")
                 
