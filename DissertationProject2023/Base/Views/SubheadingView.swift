@@ -16,7 +16,7 @@ struct SubheadingView: View {
         Text(text)
             .font(.system(size: 18, weight: .medium, design: .rounded))
             .multilineTextAlignment(.leading)
-            .padding(.top, 5)
+            .padding(.top, -5)
         
     }
 }

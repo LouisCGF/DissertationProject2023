@@ -31,7 +31,7 @@ struct Page1: View {
                 Group {
                     HStack { // <- SELECT
                         SQLTextView(sqlCode: "SELECT")
-                            .frame(width: 90)
+                            .frame(width: 100)
                         
                         Spacer()
                         
@@ -42,7 +42,7 @@ struct Page1: View {
                     
                     HStack { // <- username
                         SQLTextView(sqlCode: "username")
-                            .frame(width: 100)
+                            .frame(width: 140)
                         
                         Spacer()
                         
@@ -53,7 +53,7 @@ struct Page1: View {
                     
                     HStack { // <- FROM
                         SQLTextView(sqlCode: "FROM")
-                            .frame(width: 70)
+                            .frame(width: 100)
                         
                         Spacer()
                         
@@ -64,7 +64,7 @@ struct Page1: View {
                     
                     HStack { // <- users
                         SQLTextView(sqlCode: "users")
-                            .frame(width: 70)
+                            .frame(width: 110)
                         
                         Spacer()
                         
@@ -75,7 +75,7 @@ struct Page1: View {
                     
                     HStack { // <- semicolon
                         SQLTextView(sqlCode: ";")
-                            .frame(width: 50)
+                            .frame(width: 70)
                         
                         Spacer()
                         
@@ -90,8 +90,8 @@ struct Page1: View {
             }
             .padding()
             .foregroundColor(.black)
-            
         }
+        .background(.white)
     }
 }
 

@@ -15,6 +15,7 @@ struct SQLTextView: View {
     var body: some View {
         
         SQLCodeDisplayer(sqlCode: sqlCode)
+            .padding()
         
     }
 }

@@ -12,6 +12,7 @@ struct SQLInjectionView: View {
     private let sqlInjectionData = ModelData().sqlInjectionData
     
     @State private var selectedItem = 1
+    @State private var fullscreen = false
     
     var body: some View {
             
@@ -26,32 +27,25 @@ struct SQLInjectionView: View {
                 
                 TabView (selection: $selectedItem) {
 
-                    ZStack {
-                        
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(.white)
-  
-                        Page1()
-                    }
-                    .tag(1)
-                    .padding(.bottom, 60)
-                    .padding(.trailing, 15)
+                    Page1()
+                        .tag(1)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
                     
                     
-                    ZStack {
-                        
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(.white)
-  
-                        Page2()
-                    }
-                    .tag(2)
-                    .padding(.bottom, 60)
-                    .padding(.trailing, 15)
+                    Page2()
+                        .tag(2)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
                     
                     
-                    Text("Page \(selectedItem)")
+                    Page3()
                         .tag(3)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())
@@ -62,12 +56,34 @@ struct SQLInjectionView: View {
                     .offset(x: 140, y: -300)
                     .padding()
                 
+                Image(systemName: "viewfinder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30, height: 30)
+                    .offset(x: 330, y: 300)
+                    .foregroundColor(.black)
+                    .onTapGesture {
+                        fullscreen.toggle()
+                    }
+                
                 ProgressView("", value: (Double(selectedItem) / 3) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
                     .padding(.bottom, 100)
                     .offset(y: 380)
+            }
+            .sheet(isPresented: $fullscreen) {
+                switch (selectedItem){
+                case 1:
+                    Page1()
+                case 2:
+                    Page2()
+                case 3:
+                    Page3()
+                default:
+                    Page1()
+                }
             }
 
             

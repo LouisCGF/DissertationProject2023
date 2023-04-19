@@ -33,6 +33,9 @@
 		BFA175C929BFC7E200B5EDB1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */; };
 		BFA175CB29BFCAAD00B5EDB1 /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */; };
 		BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */; };
+		BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */; };
+		BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */; };
+		BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88E29F005F5005AF7E8 /* Page3.swift */; };
 		BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */; };
 		BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */; };
 		BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */; };
@@ -88,6 +91,9 @@
 		BFA175C829BFC7E200B5EDB1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BFA175CA29BFCAAD00B5EDB1 /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
 		BFA175D029BFE0F100B5EDB1 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPortalView.swift; sourceTree = "<group>"; };
+		BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessfulView.swift; sourceTree = "<group>"; };
+		BFB1F88E29F005F5005AF7E8 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
 		BFB6A1F429B2739700FF84F5 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		BFB6A1F729B276A500FF84F5 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 		BFB6A1F929B277BB00FF84F5 /* InputPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordView.swift; sourceTree = "<group>"; };
@@ -406,6 +412,9 @@
 				BFD594B329C0AFA600C7820F /* Page1.swift */,
 				BF9D773F29EF5179007B8C25 /* SQLTextView.swift */,
 				BF9D774129EF5D01007B8C25 /* Page2.swift */,
+				BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */,
+				BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */,
+				BFB1F88E29F005F5005AF7E8 /* Page3.swift */,
 			);
 			path = SQLInjection;
 			sourceTree = "<group>";
@@ -588,6 +597,7 @@
 				BF28209929C397680022760E /* UnixTerminalView.swift in Sources */,
 				BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */,
 				BFD5949B29C0A09A00C7820F /* SQLInjectionView.swift in Sources */,
+				BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */,
 				BF9D774229EF5D01007B8C25 /* Page2.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
 				BFD594A629C0A40300C7820F /* PasswordCrackingView.swift in Sources */,
@@ -615,9 +625,11 @@
 				BFD594B229C0AC1B00C7820F /* SQLInjectionData.swift in Sources */,
 				BF816F8829B3C26700F6CA26 /* SessionUserDetails.swift in Sources */,
 				BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */,
+				BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
 				BF9D773E29EF4D96007B8C25 /* Subheading2View.swift in Sources */,
 				BFB6A20529B286F500FF84F5 /* ForgotPasswordView.swift in Sources */,
+				BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */,
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
 				BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */,
 				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,

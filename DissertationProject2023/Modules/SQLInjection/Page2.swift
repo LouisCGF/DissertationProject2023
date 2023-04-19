@@ -54,6 +54,8 @@ struct Page2: View {
                     SQLTextView(sqlCode: "SELECT * FROM users WHERE username = '' OR 1=1 --'AND‎‎‎‎ㅤㅤㅤㅤ‎password='[INPUT_PASSWORD]';")
                     
                     SubheadingView(text: sqlInjectionData.section3_7)
+                    
+                    SubheadingView(text: "On the next page you'll be able to try this attack yourself on a simulated login system")
                 }
                 
                 
@@ -61,6 +63,7 @@ struct Page2: View {
             .padding()
             .foregroundColor(.black)
         }
+        .background(.white)
         
     }
 }
