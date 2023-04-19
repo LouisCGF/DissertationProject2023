@@ -17,5 +17,14 @@ struct SQLInjectionData: Hashable, Codable {
     var fromDescription: String
     var usersDescription: String
     var semiColonDescription: String
+    var section2: String
+    var section3: String
+    var section3_1: String
+    var section3_2: String
+    var section3_3: String
+    var section3_4: String
+    var section3_5: String
+    var section3_6: String
+    var section3_7: String
     
 }

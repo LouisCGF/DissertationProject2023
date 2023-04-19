@@ -16,134 +16,77 @@ struct Page1: View {
    
             VStack (alignment: .leading){
                 
-                Text("Introduction")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(.systemIndigo))
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 50)
+                HeadingTextView(text: "Introduction", colour: Color(.systemIndigo))
                 
-                Text(sqlInjectionData.intro)
-                    .font(.system(size: 18, weight: .medium, design: .rounded))
-                    .multilineTextAlignment(.leading)
-                    .padding(.top, 5)
+                SubheadingView(text: sqlInjectionData.intro)
                 
-                Text("What is SQL?")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(.systemIndigo))
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 50)
+                HeadingTextView(text: "What is SQL?", colour: Color(.systemIndigo))
                 
-                Text(sqlInjectionData.section1)
-                    .font(.system(size: 18, weight: .medium, design: .rounded))
-                    .multilineTextAlignment(.leading)
-                //.padding([.leading, .trailing], 30)
-                    .padding(.top, 5)
+                SubheadingView(text: sqlInjectionData.section1)
                 
-                Image("query1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Capsule())
-                    .padding()
+                SQLTextView(sqlCode: "SELECT username FROM users;")
                 
-                Text("Let's break this query down...")
-                    .font(.system(size: 18, weight: .medium, design: .rounded))
-                    .multilineTextAlignment(.leading)
-                //.padding([.leading, .trailing], 30)
-                    .padding(.top, 5)
+                SubheadingView(text: "Let's break this query down...")
                 
                 Group {
                     HStack { // <- SELECT
-                        Image("select")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Capsule())
-                            .frame(height: 25)
+                        SQLTextView(sqlCode: "SELECT")
+                            .frame(width: 90)
                         
                         Spacer()
                         
-                        Text(sqlInjectionData.selectDescription)
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .multilineTextAlignment(.leading)
-                        //.padding([.leading, .trailing], 30)
-                            .padding(.top, 5)
+                        Subheading2View(text: sqlInjectionData.selectDescription)
                     }
                     
                     Divider()
                     
                     HStack { // <- username
-                        Image("username")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Capsule())
-                            .frame(height: 25)
+                        SQLTextView(sqlCode: "username")
+                            .frame(width: 100)
                         
                         Spacer()
                         
-                        Text(sqlInjectionData.usernameDescription)
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .multilineTextAlignment(.leading)
-                        //.padding([.leading, .trailing], 30)
-                            .padding(.top, 5)
+                        Subheading2View(text: sqlInjectionData.usernameDescription)
                     }
                     
                     Divider()
                     
                     HStack { // <- FROM
-                        Image("from")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Capsule())
-                            .frame(height: 25)
+                        SQLTextView(sqlCode: "FROM")
+                            .frame(width: 70)
                         
                         Spacer()
                         
-                        Text(sqlInjectionData.fromDescription)
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .multilineTextAlignment(.leading)
-                        //.padding([.leading, .trailing], 30)
-                            .padding(.top, 5)
+                        Subheading2View(text: sqlInjectionData.fromDescription)
                     }
                     
                     Divider()
                     
                     HStack { // <- users
-                        Image("users")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Capsule())
-                            .frame(height: 25)
+                        SQLTextView(sqlCode: "users")
+                            .frame(width: 70)
                         
                         Spacer()
                         
-                        Text(sqlInjectionData.usersDescription)
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .multilineTextAlignment(.leading)
-                        //.padding([.leading, .trailing], 30)
-                            .padding(.top, 5)
+                        Subheading2View(text: sqlInjectionData.usersDescription)
                     }
                     
                     Divider()
                     
-                    HStack { // <- users
-                        Image("semi-colon")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Capsule())
-                            .frame(height: 25)
-                            .padding(.trailing, 50)
+                    HStack { // <- semicolon
+                        SQLTextView(sqlCode: ";")
+                            .frame(width: 50)
                         
-                        Text(sqlInjectionData.semiColonDescription)
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .multilineTextAlignment(.leading)
-                        //.padding([.leading, .trailing], 30)
-                            .padding(.top, 5)
+                        Spacer()
+                        
+                        Subheading2View(text: sqlInjectionData.semiColonDescription)
                     }
                     .padding()
-                    
-                    
-                    
+              
                 }
                 .padding(.top, 20)
+                
+                SubheadingView(text: "Now that you have a basic understanding of SQL, let's move on to SQL injections on the next page...")
             }
             .padding()
             .foregroundColor(.black)

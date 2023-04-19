@@ -22,10 +22,10 @@ struct SQLInjectionView: View {
                 Rectangle()
                     .fill(.indigo)
                     .frame(width: 130)
-                    .cornerRadius(5)
                     .ignoresSafeArea()
                 
                 TabView (selection: $selectedItem) {
+
                     ZStack {
                         
                         RoundedRectangle(cornerRadius: 15)
@@ -35,10 +35,20 @@ struct SQLInjectionView: View {
                     }
                     .tag(1)
                     .padding(.bottom, 60)
+                    .padding(.trailing, 15)
                     
                     
-                    Text("Page \(selectedItem)")
-                        .tag(2)
+                    ZStack {
+                        
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(.white)
+  
+                        Page2()
+                    }
+                    .tag(2)
+                    .padding(.bottom, 60)
+                    .padding(.trailing, 15)
+                    
                     
                     Text("Page \(selectedItem)")
                         .tag(3)
