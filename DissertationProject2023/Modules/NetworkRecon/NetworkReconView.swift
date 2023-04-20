@@ -44,7 +44,7 @@ struct NetworkReconView: View {
                             fullscreen.toggle()
                         }
                     
-                    /*
+                    
                     NRPage3()
                         .tag(3)
                         .cornerRadius(15)
@@ -53,7 +53,7 @@ struct NetworkReconView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
-                    */
+                    
                     /*
                     NRPage4()
                         .tag(4)
@@ -99,8 +99,8 @@ struct NetworkReconView: View {
                     NRPage1()
                 case 2:
                     NRPage2()
-                //case 3:
-                    //NRPage3()
+                case 3:
+                    NRPage3()
                 //case 4:
                     //NRPage4()
                 default:

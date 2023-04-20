@@ -11,10 +11,10 @@ struct UnixTerminalView: View {
     
     @FocusState private var fieldIsFocused: Bool
     
-    @State var inputCmd = ""
-    @State var output = ""
+    @Binding var inputCmd: String
+    @State var output = "\n\n\n\n\n\n\n\n\n"
     
-    let allowedCmds: [String] = ["nmap", "nmap -h", "nmap google.com", "nmap 142.250.187.238", "nmap -v google.com", "nmap -v 142.250.187.238"]
+    let allowedCmds: [String] = ["nmap", "nmap -h", "nmap google.com", "nmap 142.250.187.238", "nmap -v google.com", "nmap -v 142.250.187.238", "nmap -O 142.250.187.238", "nmap -O google.com", "clear"]
     
     var body: some View {
         
@@ -97,11 +97,19 @@ struct UnixTerminalView: View {
                 
             case "nmap google.com", "nmap 142.250.187.238":
 
-                output = "Starting Nmap 7.93 ( https://nmap.org ) at \(dateFormatter.string(from: date))\nNmap scan report for google.com (142.250.187.238)\nHost is up (0.0092s latency).\nrDNS record for 142.250.187.238: lhr25s34-in-f14.1e100.net\nNot shown: 998 filtered tcp ports (no-response)\nPORT    STATE SERVICE\n80/tcp  open  http\n443/tcp open  https\n\nNmap done: 1 IP address (1 host up) scanned in 0.1 seconds"
+                output = "Starting Nmap 7.93 ( https://nmap.org ) at \(currentTimeAndDate))\nNmap scan report for google.com (142.250.187.238)\nHost is up (0.0092s latency).\nrDNS record for 142.250.187.238: lhr25s34-in-f14.1e100.net\nNot shown: 998 filtered tcp ports (no-response)\nPORT    STATE SERVICE\n80/tcp  open  http\n443/tcp open  https\n\nNmap done: 1 IP address (1 host up) scanned in 0.1 seconds"
                 
             case "nmap -v google.com", "nmap -v 142.250.187.238":
 
                 output = "Starting Nmap 7.93 ( https://nmap.org ) at \(currentTimeAndDate)\nInitiating Ping Scan at \(currentTime)\nScanning google.com (142.250.187.206) [2 ports]\nCompleted Ping Scan at \(currentTime), 0.01s elapsed (1 total hosts)\nInitiating Parallel DNS resolution of 1 host. at \(currentTime)\nCompleted Parallel DNS resolution of 1 host. at \(currentTime), 0.01s elapsed\nInitiating Connect Scan at \(currentTime)\nScanning google.com (142.250.187.206) [1000 ports]\nDiscovered open port 443/tcp on 142.250.187.206\nDiscovered open port 80/tcp on 142.250.187.206\nCompleted Connect Scan at \(currentTime), 0.9s elapsed (1000 total ports)\nNmap scan report for google.com (142.250.187.206)\nHost is up (0.0089s latency).\nrDNS record for 142.250.187.206: lhr25s33-in-f14.1e100.net\nNot shown: 998 filtered tcp ports (no-response)\nPORT    STATE SERVICE\n80/tcp  open  http\n443/tcp open  https\n\nRead data files from: /usr/local/bin/../share/nmap\nNmap done: 1 IP address (1 host up) scanned in 1.1 seconds"
+                
+            case "nmap -O google.com", "nmap -O 142.250.187.238":
+                output = "Starting Nmap 7.93 ( https://nmap.org ) at \(currentTimeAndDate)\nNmap scan report for google.com (142.250.187.238)\nHost is up (0.037s latency).\nrDNS record for 142.250.187.238: lhr25s34-in-f14.1e100.net\nNot shown: 998 filtered tcp ports (no-response)\nPORT    STATE SERVICE\n80/tcp  open  http\n443/tcp open  https\nWarning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port\nDevice type: general purpose|WAP|specialized\nRunning (JUST GUESSING): OpenBSD 4.X (87%), Linux 2.6.X (85%), Crestron 2-Series (85%)\nOS CPE: cpe:/o:openbsd:openbsd:4.3 cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:crestron:2_series\nAggressive OS guesses: OpenBSD 4.3 (87%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (85%), Crestron XPanel control system (85%)\nNo exact OS matches for host (test conditions non-ideal).\n\nOS detection performed. Please report any incorrect results at https://nmap.org/submit/ .\nNmap done: 1 IP address (1 host up) scanned in 10.77 seconds"
+                
+                
+            case "clear":
+                output = "\n\n\n\n\n\n\n\n\n"
+                
             default:
                 return
             }
@@ -116,6 +124,6 @@ struct UnixTerminalView: View {
 
 struct UnixTerminalView_Previews: PreviewProvider {
     static var previews: some View {
-        UnixTerminalView()
+        UnixTerminalView(inputCmd: .constant(""))
     }
 }

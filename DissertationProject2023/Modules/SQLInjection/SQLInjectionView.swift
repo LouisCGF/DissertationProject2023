@@ -104,17 +104,8 @@ struct SQLInjectionView: View {
                 default:
                     Page1()
                 }
-            }
-
-            
-
-            
+            }   
         }
-        .background(.white)
-        //.padding(.bottom, 80)
-        
-        
-
     }
 }
 

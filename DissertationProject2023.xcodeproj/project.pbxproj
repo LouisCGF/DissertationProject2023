@@ -40,6 +40,7 @@
 		BFA4880D29F0683600F4EA37 /* networkReconData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA4880C29F0683600F4EA37 /* networkReconData.json */; };
 		BFA4880F29F0687600F4EA37 /* NetworkReconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */; };
 		BFA4881129F06DE400F4EA37 /* NmapCommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */; };
+		BFA9A70829F1801800DC0229 /* NRPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9A70729F1801800DC0229 /* NRPage3.swift */; };
 		BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */; };
 		BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */; };
 		BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88E29F005F5005AF7E8 /* Page3.swift */; };
@@ -105,6 +106,7 @@
 		BFA4880C29F0683600F4EA37 /* networkReconData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networkReconData.json; sourceTree = "<group>"; };
 		BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReconData.swift; sourceTree = "<group>"; };
 		BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmapCommandsView.swift; sourceTree = "<group>"; };
+		BFA9A70729F1801800DC0229 /* NRPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage3.swift; sourceTree = "<group>"; };
 		BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPortalView.swift; sourceTree = "<group>"; };
 		BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessfulView.swift; sourceTree = "<group>"; };
 		BFB1F88E29F005F5005AF7E8 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 				BFA4880829F05FDF00F4EA37 /* NRPage1.swift */,
 				BFA4880A29F0670500F4EA37 /* NRPage2.swift */,
 				BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */,
+				BFA9A70729F1801800DC0229 /* NRPage3.swift */,
 			);
 			path = NetworkRecon;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				BFA4880929F05FDF00F4EA37 /* NRPage1.swift in Sources */,
 				BF816F9529B3E1A000F6CA26 /* LoginService.swift in Sources */,
 				BF9D774029EF5179007B8C25 /* SQLTextView.swift in Sources */,
+				BFA9A70829F1801800DC0229 /* NRPage3.swift in Sources */,
 				BF816F8B29B3C2E000F6CA26 /* SessionService.swift in Sources */,
 				BFB6A20829B28EA700FF84F5 /* RegistrationDetails.swift in Sources */,
 				BFB6A1FF29B2812F00FF84F5 /* CloseModifier.swift in Sources */,
