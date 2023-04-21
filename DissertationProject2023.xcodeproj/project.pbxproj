@@ -45,6 +45,7 @@
 		BFA9A70C29F1AB3100DC0229 /* PasswordCrackingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9A70B29F1AB3100DC0229 /* PasswordCrackingData.swift */; };
 		BFA9A70E29F1AC6B00DC0229 /* PCPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9A70D29F1AC6B00DC0229 /* PCPage1.swift */; };
 		BFA9A71029F1B27700DC0229 /* PCPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9A70F29F1B27700DC0229 /* PCPage2.swift */; };
+		BFA9A71229F1F6B100DC0229 /* PCPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9A71129F1F6B100DC0229 /* PCPage3.swift */; };
 		BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */; };
 		BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */; };
 		BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1F88E29F005F5005AF7E8 /* Page3.swift */; };
@@ -115,6 +116,7 @@
 		BFA9A70B29F1AB3100DC0229 /* PasswordCrackingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCrackingData.swift; sourceTree = "<group>"; };
 		BFA9A70D29F1AC6B00DC0229 /* PCPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPage1.swift; sourceTree = "<group>"; };
 		BFA9A70F29F1B27700DC0229 /* PCPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPage2.swift; sourceTree = "<group>"; };
+		BFA9A71129F1F6B100DC0229 /* PCPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPage3.swift; sourceTree = "<group>"; };
 		BFB1F88A29EFF9E9005AF7E8 /* LoginPortalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPortalView.swift; sourceTree = "<group>"; };
 		BFB1F88C29EFFDED005AF7E8 /* LoginSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessfulView.swift; sourceTree = "<group>"; };
 		BFB1F88E29F005F5005AF7E8 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
@@ -475,6 +477,7 @@
 				BFD594A529C0A40300C7820F /* PasswordCrackingView.swift */,
 				BFA9A70D29F1AC6B00DC0229 /* PCPage1.swift */,
 				BFA9A70F29F1B27700DC0229 /* PCPage2.swift */,
+				BFA9A71129F1F6B100DC0229 /* PCPage3.swift */,
 			);
 			path = PasswordCracking;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				BFA4880F29F0687600F4EA37 /* NetworkReconData.swift in Sources */,
 				BFD594B429C0AFA600C7820F /* Page1.swift in Sources */,
 				BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */,
+				BFA9A71229F1F6B100DC0229 /* PCPage3.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
 				BF98302629B918C20028D6D1 /* RegisterView.swift in Sources */,
 				BFD594B229C0AC1B00C7820F /* SQLInjectionData.swift in Sources */,

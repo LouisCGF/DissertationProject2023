@@ -68,7 +68,6 @@ struct NetworkReconView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 30, height: 30)
                     .offset(x: 330, y: 300)
-                    .foregroundColor(.black)
                     .onTapGesture {
                         fullscreen.toggle()
                     }

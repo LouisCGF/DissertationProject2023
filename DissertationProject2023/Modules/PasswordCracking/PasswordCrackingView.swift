@@ -34,7 +34,7 @@ struct PasswordCrackingView: View {
                             fullscreen.toggle()
                         }
                     
-                    /*
+                    
                     PCPage2()
                         .tag(2)
                         .cornerRadius(15)
@@ -43,8 +43,8 @@ struct PasswordCrackingView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
-                    */
-                    /*
+                    
+                    
                     PCPage3()
                         .tag(3)
                         .cornerRadius(15)
@@ -53,7 +53,7 @@ struct PasswordCrackingView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
-                     */
+                     
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())
@@ -69,7 +69,6 @@ struct PasswordCrackingView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 30, height: 30)
                     .offset(x: 330, y: 300)
-                    .foregroundColor(.black)
                     .onTapGesture {
                         fullscreen.toggle()
                     }
@@ -86,10 +85,10 @@ struct PasswordCrackingView: View {
                 switch (selectedItem){
                 case 1:
                     PCPage1()
-                //case 2:
-                    //PCPage2()
-                //case 3:
-                    //PCPage3()
+                case 2:
+                    PCPage2()
+                case 3:
+                    PCPage3()
                 default:
                     PCPage1()
                 }

@@ -45,9 +45,7 @@ struct NRPage3: View {
                 
                 
                 if (showCommandFlag) {
-                    
-                    
-                    
+              
                     SubheadingView(text: descriptionText)
                         .padding(.top, 10)
                     
@@ -73,6 +71,7 @@ struct NRPage3: View {
                     .onSubmit {
                         evaluateCmd()
                     }
+                 
                 
                 SubheadingView(text: congratsText)
     

@@ -27,5 +27,20 @@ struct PasswordCrackingData: Hashable, Codable {
     var section2_6: String
     var section2_7: String
     var section2_8: String
+    var section3_1: String
+    var section3_2: String
+    var section3_3: String
+    var section3_4: String
+    var section3_5: String
+    var section3_6: String
+    var section3_7: String
+    var section3_8: String
+    var section3_9: String
+    var section3_10: String
+    var section3_11: String
+    var section3_12: String
+    var section3_13: String
+    var section3_14: String
+    var section3_15: String
     
 }
