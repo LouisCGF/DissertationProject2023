@@ -13,6 +13,7 @@ final class ModelData: ObservableObject {
     @Published var sqlInjectionData: [SQLInjectionData] = load("SQLInjectionData.json")
     @Published var networkReconData: [NetworkReconData] = load("networkReconData.json")
     @Published var passwordCrackingData: [PasswordCrackingData] = load("passwordCrackingData.json")
+    @Published var legalAndEthicsData: [LegalAndEthicsData] = load("legalAndEthicsData.json")
     
 }
 

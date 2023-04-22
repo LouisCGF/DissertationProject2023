@@ -76,6 +76,13 @@
 		BFE0A5A529AFF9E900D47803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A5A429AFF9E900D47803 /* ContentView.swift */; };
 		BFE0A5A729AFF9EA00D47803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */; };
 		BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A5A929AFF9EA00D47803 /* Preview Assets.xcassets */; };
+		BFF508B929F2EAE300B266F8 /* LEPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508B829F2EAE300B266F8 /* LEPage1.swift */; };
+		BFF508BD29F2EB2300B266F8 /* legalAndEthicsData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF508BC29F2EB2300B266F8 /* legalAndEthicsData.json */; };
+		BFF508BF29F2EB8A00B266F8 /* LegalAndEthicsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508BE29F2EB8A00B266F8 /* LegalAndEthicsData.swift */; };
+		BFF508C129F2F68C00B266F8 /* LEPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508C029F2F68C00B266F8 /* LEPage2.swift */; };
+		BFF508C329F3529000B266F8 /* LEPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508C229F3529000B266F8 /* LEPage3.swift */; };
+		BFF508C529F3568600B266F8 /* LEPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508C429F3568600B266F8 /* LEPage4.swift */; };
+		BFF508C729F35BB400B266F8 /* LEPage5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF508C629F35BB400B266F8 /* LEPage5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +151,13 @@
 		BFE0A5A429AFF9E900D47803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFE0A5A629AFF9EA00D47803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE0A5A929AFF9EA00D47803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFF508B829F2EAE300B266F8 /* LEPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage1.swift; sourceTree = "<group>"; };
+		BFF508BC29F2EB2300B266F8 /* legalAndEthicsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = legalAndEthicsData.json; sourceTree = "<group>"; };
+		BFF508BE29F2EB8A00B266F8 /* LegalAndEthicsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAndEthicsData.swift; sourceTree = "<group>"; };
+		BFF508C029F2F68C00B266F8 /* LEPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage2.swift; sourceTree = "<group>"; };
+		BFF508C229F3529000B266F8 /* LEPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage3.swift; sourceTree = "<group>"; };
+		BFF508C429F3568600B266F8 /* LEPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage4.swift; sourceTree = "<group>"; };
+		BFF508C629F35BB400B266F8 /* LEPage5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +330,7 @@
 				BFD594B129C0AC1B00C7820F /* SQLInjectionData.swift */,
 				BFA4880E29F0687600F4EA37 /* NetworkReconData.swift */,
 				BFA9A70B29F1AB3100DC0229 /* PasswordCrackingData.swift */,
+				BFF508BE29F2EB8A00B266F8 /* LegalAndEthicsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 				BFD594AD29C0AA4300C7820F /* SQLInjectionData.json */,
 				BFA4880C29F0683600F4EA37 /* networkReconData.json */,
 				BFA9A70929F1AB0400DC0229 /* passwordCrackingData.json */,
+				BFF508BC29F2EB2300B266F8 /* legalAndEthicsData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -494,6 +510,11 @@
 			isa = PBXGroup;
 			children = (
 				BFD594AB29C0A45C00C7820F /* LegalAndEthicsView.swift */,
+				BFF508B829F2EAE300B266F8 /* LEPage1.swift */,
+				BFF508C029F2F68C00B266F8 /* LEPage2.swift */,
+				BFF508C229F3529000B266F8 /* LEPage3.swift */,
+				BFF508C429F3568600B266F8 /* LEPage4.swift */,
+				BFF508C629F35BB400B266F8 /* LEPage5.swift */,
 			);
 			path = LegalAndEthics;
 			sourceTree = "<group>";
@@ -617,6 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA4880D29F0683600F4EA37 /* networkReconData.json in Resources */,
+				BFF508BD29F2EB2300B266F8 /* legalAndEthicsData.json in Resources */,
 				BFA9A70A29F1AB0400DC0229 /* passwordCrackingData.json in Resources */,
 				BFE0A5AA29AFF9EA00D47803 /* Preview Assets.xcassets in Resources */,
 				BFD594AE29C0AA4300C7820F /* SQLInjectionData.json in Resources */,
@@ -637,15 +659,18 @@
 				BFB6A20B29B28F1400FF84F5 /* RegistrationService.swift in Sources */,
 				BF28209929C397680022760E /* UnixTerminalView.swift in Sources */,
 				BFA175D129BFE0F100B5EDB1 /* ProfileSummary.swift in Sources */,
+				BFF508B929F2EAE300B266F8 /* LEPage1.swift in Sources */,
 				BFD5949B29C0A09A00C7820F /* SQLInjectionView.swift in Sources */,
 				BFB1F88F29F005F5005AF7E8 /* Page3.swift in Sources */,
 				BF9D774229EF5D01007B8C25 /* Page2.swift in Sources */,
 				BFB6A1F829B276A500FF84F5 /* PreviewLayoutComponentModifier.swift in Sources */,
 				BFD594A629C0A40300C7820F /* PasswordCrackingView.swift in Sources */,
+				BFF508C529F3568600B266F8 /* LEPage4.swift in Sources */,
 				BFD594A329C0A3DE00C7820F /* XSSView.swift in Sources */,
 				BFA4880B29F0670500F4EA37 /* NRPage2.swift in Sources */,
 				BFD594A029C0A2C000C7820F /* ModuleViewHandler.swift in Sources */,
 				BFE0A5A329AFF9E900D47803 /* DissertationProject2023App.swift in Sources */,
+				BFF508C129F2F68C00B266F8 /* LEPage2.swift in Sources */,
 				BF9D773C29EF4D18007B8C25 /* SubheadingView.swift in Sources */,
 				BFD5949E29C0A1AB00C7820F /* NetworkReconView.swift in Sources */,
 				BFA175C229BFC39600B5EDB1 /* ModelData.swift in Sources */,
@@ -667,6 +692,7 @@
 				BF816F9B29B3E79C00F6CA26 /* ForgotPasswordService.swift in Sources */,
 				BFA4880F29F0687600F4EA37 /* NetworkReconData.swift in Sources */,
 				BFD594B429C0AFA600C7820F /* Page1.swift in Sources */,
+				BFF508BF29F2EB8A00B266F8 /* LegalAndEthicsData.swift in Sources */,
 				BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */,
 				BFA9A71229F1F6B100DC0229 /* PCPage3.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
@@ -676,9 +702,11 @@
 				BFD594AC29C0A45C00C7820F /* LegalAndEthicsView.swift in Sources */,
 				BFB1F88D29EFFDED005AF7E8 /* LoginSuccessfulView.swift in Sources */,
 				BFA4881129F06DE400F4EA37 /* NmapCommandsView.swift in Sources */,
+				BFF508C729F35BB400B266F8 /* LEPage5.swift in Sources */,
 				BFB6A1FC29B27A4800FF84F5 /* ButtonView.swift in Sources */,
 				BFA4880529F0283300F4EA37 /* Page4.swift in Sources */,
 				BF9D773E29EF4D96007B8C25 /* Subheading2View.swift in Sources */,
+				BFF508C329F3529000B266F8 /* LEPage3.swift in Sources */,
 				BFB6A20529B286F500FF84F5 /* ForgotPasswordView.swift in Sources */,
 				BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */,
 				BFA4880729F02A6E00F4EA37 /* PHPTextView.swift in Sources */,
