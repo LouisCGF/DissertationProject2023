@@ -20,6 +20,7 @@
 		BF8234B72A07F73E006C19D8 /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B62A07F73E006C19D8 /* Page5.swift */; };
 		BF8234B92A081A24006C19D8 /* NRPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B82A081A24006C19D8 /* NRPage4.swift */; };
 		BF8234BB2A081C68006C19D8 /* PCPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234BA2A081C68006C19D8 /* PCPage4.swift */; };
+		BF8234BD2A081E61006C19D8 /* LEPage6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234BC2A081E61006C19D8 /* LEPage6.swift */; };
 		BF906A1729B65F8500B0E709 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1629B65F8500B0E709 /* GoogleSignIn */; };
 		BF906A1929B65F8500B0E709 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1829B65F8500B0E709 /* GoogleSignInSwift */; };
 		BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */; };
@@ -102,6 +103,7 @@
 		BF8234B62A07F73E006C19D8 /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 		BF8234B82A081A24006C19D8 /* NRPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage4.swift; sourceTree = "<group>"; };
 		BF8234BA2A081C68006C19D8 /* PCPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPage4.swift; sourceTree = "<group>"; };
+		BF8234BC2A081E61006C19D8 /* LEPage6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPage6.swift; sourceTree = "<group>"; };
 		BF906A1A29B660A900B0E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
 		BF98302329B8FF6C0028D6D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 				BFF508C229F3529000B266F8 /* LEPage3.swift */,
 				BFF508C429F3568600B266F8 /* LEPage4.swift */,
 				BFF508C629F35BB400B266F8 /* LEPage5.swift */,
+				BF8234BC2A081E61006C19D8 /* LEPage6.swift */,
 			);
 			path = LegalAndEthics;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 				BFF508BF29F2EB8A00B266F8 /* LegalAndEthicsData.swift in Sources */,
 				BF98302429B8FF6C0028D6D1 /* LoginView.swift in Sources */,
 				BFA9A71229F1F6B100DC0229 /* PCPage3.swift in Sources */,
+				BF8234BD2A081E61006C19D8 /* LEPage6.swift in Sources */,
 				BFB6A1FA29B277BB00FF84F5 /* InputPasswordView.swift in Sources */,
 				BF98302629B918C20028D6D1 /* RegisterView.swift in Sources */,
 				BFD594B229C0AC1B00C7820F /* SQLInjectionData.swift in Sources */,

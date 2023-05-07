@@ -72,6 +72,15 @@ struct LegalAndEthicsView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
+                    
+                    LEPage6()
+                        .tag(6)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                      
                     
                 }
@@ -93,7 +102,7 @@ struct LegalAndEthicsView: View {
                         fullscreen.toggle()
                     }
                 
-                ProgressView("", value: (Double(selectedItem) / 5) * 100, total: 100)
+                ProgressView("", value: (Double(selectedItem) / 6) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
@@ -114,6 +123,8 @@ struct LegalAndEthicsView: View {
                     LEPage4()
                 case 5:
                     LEPage5()
+                case 6:
+                    LEPage6()
                 default:
                     LEPage1()
                 }
