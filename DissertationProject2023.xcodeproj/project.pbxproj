@@ -18,6 +18,7 @@
 		BF816F9B29B3E79C00F6CA26 /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F9A29B3E79C00F6CA26 /* ForgotPasswordService.swift */; };
 		BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */; };
 		BF8234B72A07F73E006C19D8 /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B62A07F73E006C19D8 /* Page5.swift */; };
+		BF8234B92A081A24006C19D8 /* NRPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B82A081A24006C19D8 /* NRPage4.swift */; };
 		BF906A1729B65F8500B0E709 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1629B65F8500B0E709 /* GoogleSignIn */; };
 		BF906A1929B65F8500B0E709 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1829B65F8500B0E709 /* GoogleSignInSwift */; };
 		BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */; };
@@ -98,6 +99,7 @@
 		BF816F9A29B3E79C00F6CA26 /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		BF8234B62A07F73E006C19D8 /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
+		BF8234B82A081A24006C19D8 /* NRPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage4.swift; sourceTree = "<group>"; };
 		BF906A1A29B660A900B0E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
 		BF98302329B8FF6C0028D6D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				BFA4880A29F0670500F4EA37 /* NRPage2.swift */,
 				BFA4881029F06DE400F4EA37 /* NmapCommandsView.swift */,
 				BFA9A70729F1801800DC0229 /* NRPage3.swift */,
+				BF8234B82A081A24006C19D8 /* NRPage4.swift */,
 			);
 			path = NetworkRecon;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 				BFB1F88B29EFF9E9005AF7E8 /* LoginPortalView.swift in Sources */,
 				BFA4880729F02A6E00F4EA37 /* PHPTextView.swift in Sources */,
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
+				BF8234B92A081A24006C19D8 /* NRPage4.swift in Sources */,
 				BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */,
 				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,
 				BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  Page5.swift
+//  NRPage4.swift
 //  DissertationProject2023
 //
 //  Created by Louis on 07/05/2023.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct Page5: View {
+struct NRPage4: View {
+    let q1Answers = ["To launch a cyber attack on a target network.", "To gather information about a target network or system to identify potential vulnerabilities and weaknesses.", "To repair damaged network infrastructure.", "To advertise a target network or system to the public."]
     
-    let q1Answers = ["A method of optimising SQL queries", "A technique used to insert malicious code into an SQL query", "A built-in feature in SQL databases for error handling", "A method for creating database connections"]
+    let q2Answers = [ "nmap -sV [target IP range]", "nmap -O [target IP range]", "nmap -sn [target IP range]", "nmap [target IP range]" ]
     
-    let q2Answers = [ "Concatenating user input with SQL queries", "Using prepared statements and parameterized queries", "Storing user input in variables before using them in queries", "Escaping special characters in user input" ]
+    let q3Answers = ["Host Discovery", "Port Scanning", "Version Detection", "OS Detection"]
     
-    let q3Answers = ["To make it easier to write raw SQL queries", "To abstract the process of constructing and executing SQL queries, making it more secure", "To provide a command-line interface for executing SQL queries", "To convert SQL queries into a more human-readable format"]
-    
-    let q4Answers = ["To ensure that user input is in the correct format and free of potentially harmful content", "To improve the performance of SQL queries", "To make it easier to read and understand user input", "To automatically generate SQL queries based on user input"]
+    let q4Answers = ["Passive reconnaissance involves direct interaction with the target network, while active reconnaissance does not.", "Passive reconnaissance is performed by network administrators, while active reconnaissance is performed by hackers.", "Passive reconnaissance involves collecting information without directly interacting with the target network, while active reconnaissance involves direct interaction with the target network.", "Passive reconnaissance is illegal, while active reconnaissance is legal."]
     
     @State var q1SelectedAnswer = ""
     @State var q2SelectedAnswer = ""
@@ -45,23 +44,23 @@ struct Page5: View {
             VStack (alignment: .leading){
                 
                 Group {
-                    HeadingTextView(text: "Check Your Understanding", colour: Color(.systemIndigo))
+                    HeadingTextView(text: "Check Your Understanding", colour: Color(.systemPink))
                     
-                    SubheadingView(text: "What is an SQL injection?")
+                    SubheadingView(text: "What is the primary purpose of network reconnaissance?")
                     
                     QuestionView(selectedAnswer: $q1SelectedAnswer, textColour: $q1TextColour, correctAnswer: q1Answers[1], correctAnswerColor: $q1CorrectAnswerColour, selectedAnswerColor: $q1SelectedAnswerColour, answers: q1Answers)
                     
-                    SubheadingView(text: "Which technique is used to separate user-supplied data from the SQL query itself, preventing SQL injections?")
+                    SubheadingView(text: "Which NMAP command is used to perform a ping sweep?")
                     
-                    QuestionView(selectedAnswer: $q2SelectedAnswer, textColour: $q2TextColour, correctAnswer: q2Answers[1], correctAnswerColor: $q2CorrectAnswerColour, selectedAnswerColor: $q2SelectedAnswerColour, answers: q2Answers)
+                    QuestionView(selectedAnswer: $q2SelectedAnswer, textColour: $q2TextColour, correctAnswer: q2Answers[2], correctAnswerColor: $q2CorrectAnswerColour, selectedAnswerColor: $q2SelectedAnswerColour, answers: q2Answers)
                     
-                    SubheadingView(text: "What is the purpose of an Object-Relational Mapping (ORM) library?")
+                    SubheadingView(text: "Which of the following NMAP features helps to identify the operating system of a target host?")
                     
-                    QuestionView(selectedAnswer: $q3SelectedAnswer, textColour: $q3TextColour, correctAnswer: q3Answers[1], correctAnswerColor: $q3CorrectAnswerColour, selectedAnswerColor: $q3SelectedAnswerColour, answers: q3Answers)
+                    QuestionView(selectedAnswer: $q3SelectedAnswer, textColour: $q3TextColour, correctAnswer: q3Answers[3], correctAnswerColor: $q3CorrectAnswerColour, selectedAnswerColor: $q3SelectedAnswerColour, answers: q3Answers)
                     
-                    SubheadingView(text: "Why is it important to validate and sanitize user input?")
+                    SubheadingView(text: "What is the main difference between passive and active network reconnaissance?")
                     
-                    QuestionView(selectedAnswer: $q4SelectedAnswer, textColour: $q4TextColour, correctAnswer: q4Answers[0], correctAnswerColor: $q4CorrectAnswerColour, selectedAnswerColor: $q4SelectedAnswerColour, answers: q4Answers)
+                    QuestionView(selectedAnswer: $q4SelectedAnswer, textColour: $q4TextColour, correctAnswer: q4Answers[2], correctAnswerColor: $q4CorrectAnswerColour, selectedAnswerColor: $q4SelectedAnswerColour, answers: q4Answers)
                     
                     Text(endText)
                 }
@@ -95,15 +94,15 @@ struct Page5: View {
             q1SelectedAnswerColour = Color(.red)
         }
         
-        if q2SelectedAnswer != q2Answers[1] {
+        if q2SelectedAnswer != q2Answers[2] {
             q2SelectedAnswerColour = Color(.red)
         }
         
-        if q3SelectedAnswer != q3Answers[1] {
+        if q3SelectedAnswer != q3Answers[3] {
             q3SelectedAnswerColour = Color(.red)
         }
         
-        if q4SelectedAnswer != q4Answers[0] {
+        if q4SelectedAnswer != q4Answers[2] {
             q4SelectedAnswerColour = Color(.red)
         }
         
@@ -151,8 +150,8 @@ private struct QuestionView: View {
   
 }
 
-struct Page5_Previews: PreviewProvider {
+struct NRPage4_Previews: PreviewProvider {
     static var previews: some View {
-        Page5()
+        NRPage4()
     }
 }

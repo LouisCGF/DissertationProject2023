@@ -53,6 +53,16 @@ struct NetworkReconView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
+                    
+                    NRPage4()
+                        .tag(4)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
+                    
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())
@@ -72,7 +82,7 @@ struct NetworkReconView: View {
                         fullscreen.toggle()
                     }
                 
-                ProgressView("", value: (Double(selectedItem) / 3) * 100, total: 100)
+                ProgressView("", value: (Double(selectedItem) / 4) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
@@ -88,6 +98,8 @@ struct NetworkReconView: View {
                     NRPage2()
                 case 3:
                     NRPage3()
+                case 4:
+                    NRPage4()
                 default:
                     NRPage1()
                 }
