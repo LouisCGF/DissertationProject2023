@@ -32,9 +32,11 @@ struct InputPasswordView: View {
                     
                         ZStack (alignment: .leading) {
                             
-                            if let systemImage = sfSymbol {
+                            let systemImage = sfSymbol
+                            
+                            if systemImage == sfSymbol {
                                 
-                                Image(systemName: systemImage)
+                                Image(systemName: systemImage ?? "")
                                     .font(.system(size: 16, weight: .semibold))
                                     .padding(.leading, 3)
                                     .foregroundColor(sfSymbolColor?.opacity(fieldIsFocused ? 1 : 0.5))
@@ -60,7 +62,9 @@ struct InputPasswordView: View {
                     
                         ZStack (alignment: .leading) {
                             
-                            if let systemImage = "eye" {
+                            let systemImage = "eye"
+                            
+                            if systemImage == "eye" {
                                 
                                 Image(systemName: systemImage)
                                     .font(.system(size: 16, weight: .semibold))

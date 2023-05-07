@@ -24,17 +24,7 @@ class GoogleSignInViewModel: ObservableObject {
     
     
     func googleSignIn() {
-        
-        /*
-        if GIDSignIn.sharedInstance.hasPreviousSignIn() {
-            GIDSignIn.sharedInstance.restorePreviousSignIn { [unowned self] user, error in
-                authenticateUser(for: user, with: error)
-            }
-        } else {
 
-        }
-         */
-        
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         
         // Create Google Sign In configuration object.
@@ -70,19 +60,17 @@ class GoogleSignInViewModel: ObservableObject {
     }
     
     private func authenticateUser(for user: GIDGoogleUser?, with error: Error?) {
-        // 1
+
         if let error = error {
             print(error.localizedDescription)
             return
         }
-        
-        // 2
+
         guard let idToken = user?.idToken?.tokenString else { return }
         
         let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                        accessToken: user?.accessToken.tokenString ?? "")
-        
-        // 3
+
         Auth.auth().signIn(with: credential) { result, error in
             if let error = error {
                 print(error.localizedDescription)
