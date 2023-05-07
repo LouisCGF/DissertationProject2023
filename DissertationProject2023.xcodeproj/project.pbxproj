@@ -19,6 +19,7 @@
 		BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */; };
 		BF8234B72A07F73E006C19D8 /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B62A07F73E006C19D8 /* Page5.swift */; };
 		BF8234B92A081A24006C19D8 /* NRPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234B82A081A24006C19D8 /* NRPage4.swift */; };
+		BF8234BB2A081C68006C19D8 /* PCPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8234BA2A081C68006C19D8 /* PCPage4.swift */; };
 		BF906A1729B65F8500B0E709 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1629B65F8500B0E709 /* GoogleSignIn */; };
 		BF906A1929B65F8500B0E709 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF906A1829B65F8500B0E709 /* GoogleSignInSwift */; };
 		BF906A1C29B6611C00B0E709 /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */; };
@@ -100,6 +101,7 @@
 		BF816F9D29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		BF8234B62A07F73E006C19D8 /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 		BF8234B82A081A24006C19D8 /* NRPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPage4.swift; sourceTree = "<group>"; };
+		BF8234BA2A081C68006C19D8 /* PCPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPage4.swift; sourceTree = "<group>"; };
 		BF906A1A29B660A900B0E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BF906A1B29B6611C00B0E709 /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
 		BF98302329B8FF6C0028D6D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 				BFA9A70D29F1AC6B00DC0229 /* PCPage1.swift */,
 				BFA9A70F29F1B27700DC0229 /* PCPage2.swift */,
 				BFA9A71129F1F6B100DC0229 /* PCPage3.swift */,
+				BF8234BA2A081C68006C19D8 /* PCPage4.swift */,
 			);
 			path = PasswordCracking;
 			sourceTree = "<group>";
@@ -728,6 +731,7 @@
 				BFB6A20329B285F100FF84F5 /* HomeView.swift in Sources */,
 				BF8234B92A081A24006C19D8 /* NRPage4.swift in Sources */,
 				BFD594A929C0A42800C7820F /* OSINTView.swift in Sources */,
+				BF8234BB2A081C68006C19D8 /* PCPage4.swift in Sources */,
 				BF816F8429B3BB4C00F6CA26 /* RegistrationViewModel.swift in Sources */,
 				BF816F9E29B3ED0B00F6CA26 /* ForgotPasswordViewModel.swift in Sources */,
 				BFB6A1F529B2739700FF84F5 /* InputTextFieldView.swift in Sources */,

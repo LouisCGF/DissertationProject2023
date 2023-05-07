@@ -53,6 +53,15 @@ struct PasswordCrackingView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
+                    
+                    PCPage4()
+                        .tag(4)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                      
                 }
                 .padding()
@@ -73,7 +82,7 @@ struct PasswordCrackingView: View {
                         fullscreen.toggle()
                     }
                 
-                ProgressView("", value: (Double(selectedItem) / 3) * 100, total: 100)
+                ProgressView("", value: (Double(selectedItem) / 4) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
@@ -89,6 +98,8 @@ struct PasswordCrackingView: View {
                     PCPage2()
                 case 3:
                     PCPage3()
+                case 4:
+                    PCPage4()
                 default:
                     PCPage1()
                 }
