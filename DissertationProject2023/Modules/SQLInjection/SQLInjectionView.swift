@@ -64,6 +64,15 @@ struct SQLInjectionView: View {
                         .onTapGesture {
                             fullscreen.toggle()
                         }
+                    
+                    Page5()
+                        .tag(5)
+                        .cornerRadius(15)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 15)
+                        .onTapGesture {
+                            fullscreen.toggle()
+                        }
                 }
                 .padding()
                 .tabViewStyle(PageTabViewStyle())
@@ -83,7 +92,7 @@ struct SQLInjectionView: View {
                         fullscreen.toggle()
                     }
                 
-                ProgressView("", value: (Double(selectedItem) / 4) * 100, total: 100)
+                ProgressView("", value: (Double(selectedItem) / 5) * 100, total: 100)
                     .foregroundColor(.white)
                     .tint(.green)
                     .padding([.leading, .trailing])
@@ -100,6 +109,8 @@ struct SQLInjectionView: View {
                     Page3()
                 case 4:
                     Page4()
+                case 5:
+                    Page5()
                 default:
                     Page1()
                 }
